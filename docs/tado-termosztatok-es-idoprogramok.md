@@ -87,7 +87,7 @@ A 2026-10-27-én megosztott Home Assistant képernyőkép szerint a Tado-integr�
 | RU1602FT01050584057344 | RU01 · Gépészet | 2 | **Ellenőrzött** – képernyőkép; fürdőszobai termosztát |
 | RU2734702592 | RU02 · Gépészet | 2 | **Ellenőrzött** – képernyőkép; nappali-konyhai termosztát |
 
-**Megjegyzés:** a képernyőképen szereplő integrációs összesítés 39 entitást mutat, miközben a felsorolt eszközsoroknál látható darabszámok összege ettől eltér. Ezt az eltérést nem oldjuk fel feltételezéssel; az egyedi entitások listáját a Home Assistantból kell lekérni és ellenőrizni.
+**Egyeztetési megjegyzés:** a 39-es integrációs összesítés eltérésének okát a felhasználó 2026-10-27-én tisztázta: a Tado-integráció frissítés előtti változata még támogatta a telefonokhoz kapcsolódó entitásokat, ezért létrehozta azokat. A frissítés után ezek már nem szerepeltek az integráció által szolgáltatott entitások között. A korábbi összesítés és a jelenlegi leltár ezért nem feltétlenül hasonlítható össze közvetlenül.
 
 ### Entitásazonosítók lekérése
 
@@ -154,8 +154,18 @@ A felhasználó 2026-10-27-én bemásolta a sablon kimenetét. Az alábbi lista 
 | `sensor.nappali_termosztat_paratartalom` | Nappali termosztát Páratartalom |
 | `sensor.nappali_termosztat_tado_mod` | Nappali termosztát Tado mód |
 
-**Egyeztetési megjegyzés:** a bemásolt kimenetben 34 entitásazonosító szerepel, míg a Tado-integráció áttekintő képernyőképe 39 entitást jelez. Az eltérés oka **Ellenőrizetlen**; nem következtetünk arra, hogy hiányzik-e entitás, vagy az összesítés más módon számol. A fenti lista a ténylegesen megosztott kimenetet őrzi meg.
+**Egyeztetési megjegyzés:** a bemásolt kimenetben 33 entitásazonosító szerepel. A korábbi 39-es integrációs összesítés eltérésének okát a felhasználó a korábbi integrációs változat telefonentitás-támogatásával magyarázta; lásd a következő ellenőrzési bejegyzést. A fenti lista a ténylegesen megosztott kimenetet őrzi meg.
 
+
+
+### Megszűnt Tado-telefonentitások törlésének ellenőrzése
+
+- **Ellenőrzés dátuma:** 2026-10-27, Europe/Budapest.
+- **Státusz:** **Ellenőrzött**.
+- **Forrás:** a Home Assistantban megjelenő „Ezt az entitást már nem szolgáltatja a(z) tado integráció” figyelmeztetés, a törlés utáni, felhasználó által bemásolt entitáslista és a felhasználó 2026-10-27-i magyarázata.
+- **Megállapítás:** a Tado-integráció frissítés előtti változata még támogatta a telefonokhoz kapcsolódó entitásokat, ezért létrehozta azokat. A frissítés után ezeket az entitásokat az integráció már nem szolgáltatta.
+- **Eltávolított elavult entitások:** hét entitás a következő telefonokhoz kapcsolódóan: Bálint telefon (3), Reni telefon (1), Zoé telefon (1), Zsombi telefon (2). A felhasználó mind a hét elavult entitást törölte a Home Assistantból.
+- **Lezárás:** a telefonentitások eltérésének oka és a törlés indokoltsága **Ellenőrzött**. Ez a bejegyzés a korábbi integrációs állapot magyarázatát rögzíti; nem állítja, hogy a Home Assistant aktuális állapotát közvetlenül lekérdeztük.
 
 ## Nyitott kérdések
 
