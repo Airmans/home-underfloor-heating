@@ -7,7 +7,7 @@
 ## Források
 
 - Elsődleges forrás: felhasználó által megosztott `Padlófűtés beállítás.xlsx` munkafüzet, benne a körkiosztással, méretekkel, korrekciós tényezőkkel és alaprajzzal.
-- A forrásmunkafüzet tervezett, verziókezelt helye: [`evidence/padlofutes-beallitas-20261027.xlsx`](../evidence/padlofutes-beallitas-20261027.xlsx). A fájlt a GitHub-repozitóriumba még fel kell tölteni.
+- Verziókezelt forrásfájl: [`docs/evidence/padlofutes-beallitas-20261027.xlsx`](evidence/padlofutes-beallitas-20261027.xlsx). A felhasználó 2026-10-27-én letöltötte és ellenőrizte a GitHubon tárolt fájlt; visszajelzése szerint rendben van.
 - Felhasználói megerősítés: a `Poz` oszlopban szereplő értékek a jelenlegi tényleges beállításokat tükrözik.
 - Ellenőrzés dátuma: 2026-10-27, Europe/Budapest.
 
@@ -36,6 +36,7 @@ A munkafüzetben szereplő területek és a `Korrekció` oszlop értékei az ere
 ## Bizonyítottság és korlátok
 
 - **Ellenőrzött a forrásban:** a körszámok, a táblázatban megadott helyiségek, területek, korrekciók és `Poz` értékek a megosztott munkafüzetben láthatók.
+- **A fájl megléte és felhasználói ellenőrzése megerősített:** a felhasználó 2026-10-27-én letöltötte a GitHubon tárolt Excel-fájlt, és visszaigazolta, hogy rendben van. Ez nem jelent független műszaki validálást a táblázat adatainak helyességéről.
 - **Ellenőrzött felhasználói megerősítés alapján:** a `Poz` értékek a jelenlegi tényleges beállítások.
 - **Korábbi mérési forrásból átvett:** a hőkamerás körazonosítás és az alaprajzi zónakiosztás; a korábbi hőkamerás mérési jegyzőkönyv külön nincs csatolva ebben a dokumentumban.
 - **Felhasználói tapasztalat:** a szobák nagyjából azonos hőmérsékletűek a jelenlegi beszabályozással; ehhez itt nincs csatolt, egyidejű hőmérséklet-adatsor.
