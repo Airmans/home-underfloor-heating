@@ -72,6 +72,36 @@ A képernyőkép szerint hétfőtől vasárnapig azonos program érvényes.
 
 A pillanatnyi mért szobahőmérsékleteket nem rögzítjük, mert ehhez a felmérési feladathoz nem relevánsak.
 
+
+## Home Assistant-integráció – eszközleltár
+
+A 2026-10-27-én megosztott Home Assistant képernyőkép szerint a Tado-integráció összesítése **7 eszközt és 39 entitást** jelez. A képernyőképen látható eszközök:
+
+| Home Assistant-eszköznév | Megjelenített terület / zóna | Entitások száma | Bizonyítottság |
+| --- | --- | ---: | --- |
+| Háztartási termosztát | Fürdő & Háztartási · Zone | 11 | **Ellenőrzött** – képernyőkép |
+| IB0332086528 | IB01 · Gépészet | 1 | **Ellenőrzött** – képernyőkép; Tado Internet Bridge |
+| Kis Otthonunk | Home · Gépészet | 0 | **Ellenőrzött** – képernyőkép |
+| Kis Otthonunk | Home | 6 | **Ellenőrzött** – képernyőkép; az eszköz pontos szerepét külön nem azonosítottuk |
+| Nappali termosztát | Nappali & Konyha · Zone | 11 | **Ellenőrzött** – képernyőkép |
+| RU1602FT01050584057344 | RU01 · Gépészet | 2 | **Ellenőrzött** – képernyőkép; fürdőszobai termosztát |
+| RU2734702592 | RU02 · Gépészet | 2 | **Ellenőrzött** – képernyőkép; nappali-konyhai termosztát |
+
+**Megjegyzés:** a képernyőképen szereplő integrációs összesítés 39 entitást mutat, miközben a felsorolt eszközsoroknál látható darabszámok összege ettől eltér. Ezt az eltérést nem oldjuk fel feltételezéssel; az egyedi entitások listáját a Home Assistantból kell lekérni és ellenőrizni.
+
+### Entitásazonosítók lekérése
+
+A Home Assistantban a **Fejlesztői eszközök → Sablon** oldalon az alábbi Jinja-sablon listázza a Tado-integrációhoz rendelt entitásazonosítókat és a hozzájuk tartozó megjelenített neveket:
+
+```jinja
+{% for entity_id in integration_entities('tado') | sort %}
+{{ entity_id }} — {{ state_attr(entity_id, 'friendly_name') }}
+{% endfor %}
+```
+
+A sablon eredménye még nincs rögzítve ebben a dokumentumban. A lekért lista alapján lehet majd véglegesíteni a Tado-hoz tartozó HA-entitások leltárát.
+
+
 ## Nyitott kérdések
 
 1. A fürdőszobai termosztát pontos generációja.
