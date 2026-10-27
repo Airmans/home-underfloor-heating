@@ -77,3 +77,21 @@ A későbbi tervezés során meg kell őrizni a kazán gyártó által előírt 
 ## Biztonsági korlát
 
 Nem bontunk burkolatot, nem végzünk feszültség alatti mérést, nem vizsgálunk vezetékeket, nem indítunk kazánpróbát és nem módosítunk beállítást. Bármely ilyen művelet külön, konkrét felhasználói jóváhagyást és szükség esetén szakképzett szakembert igényel.
+
+
+## Felhasználó által közölt kazánbeállítások
+
+**Rögzítés dátuma:** 2026-10-27, Europe/Budapest  
+**Forrás:** felhasználói közlés a kazán üzemi paramétereiről és előremenő-beállításáról.  
+**Bizonyítottság:** **Felhasználói közlés / részben ellenőrzött** — a közölt értékeket nem olvastuk le élő kazánkijelzőről vagy szervizmenüből ebben a felmérési lépésben; a paraméterek funkcióját és a megadott értékek helyességét a pontos modell dokumentációjával még össze kell vetni.
+
+| Paraméter | Közölt érték | Megjegyzés |
+|---|---:|---|
+| PA00 | 01 | A felhasználó által megadott üzemi paraméter |
+| PA01 | 03 | A felhasználó által megadott üzemi paraméter |
+| PA02 | 06 | A felhasználó által megadott üzemi paraméter |
+| PA03 | 02 | A felhasználó által megadott üzemi paraméter |
+| PA09 | 20 | A felhasználó által megadott üzemi paraméter |
+| Kazán előremenő-hőmérséklet beállítása | 32 °C | Beállított érték; nem igazolja a tényleges előremenő vízhőmérsékletet |
+
+A paraméterek funkcióját és azt, hogy az adott vezérlési módhoz megfelelőek-e, csak a gyártói kézikönyv alapján szabad értelmezni. A PA00 aktuális értéke a felhasználó közlése szerint 01; a korábbi „ismeretlen” státusz erre az értékre már nem érvényes, de a helyszíni leolvasás és a paraméter jelentésének ellenőrzése továbbra is hiányzik. Az SE07 értékét a felhasználó nem közölte, ezért az továbbra is ismeretlen. Nem történt beállításmódosítás vagy élő rendszerpróba.
