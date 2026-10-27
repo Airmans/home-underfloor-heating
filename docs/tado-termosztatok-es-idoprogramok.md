@@ -99,7 +99,62 @@ A Home Assistantban a **Fejlesztői eszközök → Sablon** oldalon az alábbi J
 {% endfor %}
 ```
 
-A sablon eredménye még nincs rögzítve ebben a dokumentumban. A lekért lista alapján lehet majd véglegesíteni a Tado-hoz tartozó HA-entitások leltárát.
+A felhasználó 2026-10-27-én bemásolta a sablon kimenetét. Az alábbi lista **a megosztott kimenet alapján Ellenőrzött**; nem jelent külön, közvetlen lekérdezést a Home Assistantból.
+
+#### Bináris szenzorok
+
+| Entitásazonosító | Megjelenített név |
+| --- | --- |
+| `binary_sensor.haztartasi_termosztat_ablak` | Háztartási termosztát Ablak |
+| `binary_sensor.haztartasi_termosztat_atfedes` | Háztartási termosztát Felülbírálás |
+| `binary_sensor.haztartasi_termosztat_bekapcsolva` | Háztartási termosztát Bekapcsolva |
+| `binary_sensor.haztartasi_termosztat_csatlakozas` | Háztartási termosztát Csatlakozás |
+| `binary_sensor.haztartasi_termosztat_korai_kezdes` | Háztartási termosztát Korai kezdés |
+| `binary_sensor.ib0332086528_kapcsolat_allapota` | IB0332086528 Kapcsolat állapota |
+| `binary_sensor.nappali_termosztat_ablak` | Nappali termosztát Ablak |
+| `binary_sensor.nappali_termosztat_atfedes` | Nappali termosztát Felülbírálás |
+| `binary_sensor.nappali_termosztat_bekapcsolva` | Nappali termosztát Bekapcsolva |
+| `binary_sensor.nappali_termosztat_csatlakozas` | Nappali termosztát Csatlakozás |
+| `binary_sensor.nappali_termosztat_korai_kezdes` | Nappali termosztát Korai kezdés |
+| `binary_sensor.ru1602ft01050584057344_elem_akku` | RU1602FT01050584057344 Elem/Akku |
+| `binary_sensor.ru1602ft01050584057344_kapcsolat_allapota` | RU1602FT01050584057344 Kapcsolat állapota |
+| `binary_sensor.ru2734702592_elem_akku` | RU2734702592 Elem/Akku |
+| `binary_sensor.ru2734702592_kapcsolat_allapota` | RU2734702592 Kapcsolat állapota |
+
+#### Klímaentitások
+
+| Entitásazonosító | Megjelenített név |
+| --- | --- |
+| `climate.haztartasi_termosztat` | Háztartási termosztát |
+| `climate.nappali_termosztat` | Nappali termosztát |
+
+#### Választóentitások
+
+| Entitásazonosító | Megjelenített név |
+| --- | --- |
+| `select.furdo_haztartasi_haztartasi_termosztat_futesi_kor` | Háztartási termosztát Fűtési kör |
+| `select.nappali_konyha_nappali_termosztat_futesi_kor` | Nappali termosztát Fűtési kör |
+
+#### Szenzorok
+
+| Entitásazonosító | Megjelenített név |
+| --- | --- |
+| `sensor.haztartasi_termosztat_futes` | Háztartási termosztát Fűtés |
+| `sensor.haztartasi_termosztat_homerseklet` | Háztartási termosztát Hőmérséklet |
+| `sensor.haztartasi_termosztat_paratartalom` | Háztartási termosztát Páratartalom |
+| `sensor.haztartasi_termosztat_tado_mod` | Háztartási termosztát Tado mód |
+| `sensor.kis_otthonunk_automatikus_geofencing` | Kis Otthonunk Automatikus geofencing |
+| `sensor.kis_otthonunk_geofencing_helymeghatarozas_mod` | Kis Otthonunk Geofencing (helymeghatározás) mód |
+| `sensor.kis_otthonunk_idojarasi_allapot` | Kis Otthonunk Időjárási állapot |
+| `sensor.kis_otthonunk_kulso_homerseklet` | Kis Otthonunk Külső hőmérséklet |
+| `sensor.kis_otthonunk_napsutes_szazalek` | Kis Otthonunk Napsütés százalék |
+| `sensor.kis_otthonunk_tado_mod` | Kis Otthonunk Tado mód |
+| `sensor.nappali_termosztat_futes` | Nappali termosztát Fűtés |
+| `sensor.nappali_termosztat_homerseklet` | Nappali termosztát Hőmérséklet |
+| `sensor.nappali_termosztat_paratartalom` | Nappali termosztát Páratartalom |
+| `sensor.nappali_termosztat_tado_mod` | Nappali termosztát Tado mód |
+
+**Egyeztetési megjegyzés:** a bemásolt kimenetben 34 entitásazonosító szerepel, míg a Tado-integráció áttekintő képernyőképe 39 entitást jelez. Az eltérés oka **Ellenőrizetlen**; nem következtetünk arra, hogy hiányzik-e entitás, vagy az összesítés más módon számol. A fenti lista a ténylegesen megosztott kimenetet őrzi meg.
 
 
 ## Nyitott kérdések
