@@ -52,7 +52,10 @@ A [Home Computer Architecture repó](https://github.com/Airmans/home-computer-ar
 A dokumentumok a projekt előrehaladtával, a jóváhagyott feladatok alapján kerülnek létrehozásra. A felépítést nem szabad kész felmérés látszatát keltve előre feltölteni:
 
 - `docs/` – műszaki felmérések, döntések, tervek és tesztjegyzőkönyvek.
-- [Meglévő Tado-konfiguráció és villamos elosztó – kezdeti dokumentálás](docs/meglevo-tado-konfiguracio-es-eloszto.md) – a 2026-10-27-i Tado-időprogramok, beállítások, felhasználói közlések és az elosztó fényképes megfigyelése.
+- [Kazán és kazánoldali fűtésvezérlés](docs/kazan-es-kazanoldali-vezerles.md) – a kazánhoz kapcsolódó ismert adatok és nyitott kérdések.
+- [Tado-termosztátok és időprogramok](docs/tado-termosztatok-es-idoprogramok.md) – eszközadatok, ütemezések és alkalmazásbeállítások.
+- [Padlófűtési rendszer](docs/padlofutesi-rendszer.md) – külön felmérési adatlap a körökhöz és a hidraulikai kialakításhoz; a műszaki adatok felmérésre várnak.
+- [Villamos elosztó](docs/villamos-eloszto.md) – fényképes megfigyelés és azonosításra váró elemek.
 - `docs/evidence/` – releváns fényképek, címkék, rajzok és más bizonyítékok, amennyiben biztonságosan és megfelelően tárolhatók.
 - `README.md` – projektcél, munkamódszer, biztonsági szabályok és dokumentációs navigáció.
 
