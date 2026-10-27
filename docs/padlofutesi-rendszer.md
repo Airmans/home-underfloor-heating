@@ -55,6 +55,10 @@ A 2026-10-27-én megosztott Home Assistant-eszközoldal és felhasználói közl
 - A két hőmérséklet-entitás eszközoldalán megjelenő attribútumok, ha a mérési forrást tisztázni kell.
 - A nyomásmérő skálájának, mértékegységének és aktuális értékének fényképe, ha biztonságosan leolvasható. Az aktuális nyomásérték még nincs rögzítve.
 
+## Kapcsolódó dokumentum – körkiosztás és beszabályozás
+
+A nyolc kör helyiség-hozzárendelése, a táblázat szerinti területek, korrekciós tényezők és a felhasználó által megerősített jelenlegi `Poz` beállítások külön dokumentumban szerepelnek: [Padlófűtési körök és jelenlegi beszabályozás](padlofutesi-korok-es-beszabalyozas.md). Az eredeti Excel-forrás tervezett repo-útvonala: `evidence/padlofutes-beallitas-20261027.xlsx`; feltöltésre még vár.
+
 ## Még felmérendő adatok
 
 | Terület | Rögzítendő bizonyíték |
