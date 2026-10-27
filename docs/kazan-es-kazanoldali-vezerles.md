@@ -23,11 +23,11 @@ A gyártói telepítési és kezelési dokumentációt a pontos típushoz kell t
 
 ## Meglévő fűtési igény és vezérlés
 
-- A felhasználó közlése szerint a fűtési igény a két Tado V3 termosztát közül bármelyik igénye esetén megjelenik.
-- A „Nappali & Konyha” termosztát két eres vezetékkel kapcsolódik a kazánhoz; a felhasználó ezt nevezte meg egyetlen közvetlen vezetékes termosztát–kazán kapcsolatként.
-- A másik, fürdőszobai termosztát kazán felé vezető jelútja nem tisztázott.
-- A vezérlés Tado V3 rendszerhez kötött; a Home Assistantban felhőalapú Tado-integráció működik. Ez az integráció önmagában nem bizonyítja, hogy a Home Assistant közvetlenül vezérli a kazán fűtési bemenetét.
-- Nem igazolt, hogy a kazán vezérlőbemenete potenciálmentes kontaktust, buszos vezérlést vagy más jelet vár-e, illetve hogy van-e köztes relé vagy vezérlő.
+- **Felhasználói pontosítás, 2026-10-27 13:23 Europe/Budapest:** a kazán közvetlen ON/OFF vezérlője a „Nappali & Konyha” Tado termosztát, amely két eres vezetékkel kapcsolódik a kazánhoz. A termosztát kazánoldali kimenetének villamos jellemzői és a tényleges kapcsok továbbra sincsenek ellenőrizve.
+- A fürdőszobai Tado termosztát adata a Tado felhőbe jut, és a felhasználó leírása szerint a felhőn keresztül a „Nappali & Konyha” termosztát vezérlése történik. Így a fürdőszobai hőigény a nappali termosztáton keresztül jut el a kazán ON/OFF bemenetéhez; a pontos Tado-konfigurációt és az adatút részleteit külön nem ellenőriztük.
+- A felhasználó korábbi leírása szerint bármelyik termosztát hőigénye fűtési igényt eredményez. Ezt a most pontosított felhőn keresztüli jelúttal együtt kell értelmezni, nem két külön közvetlen kazánbekötésként.
+- A Home Assistantban felhőalapú Tado-integráció működik. Ez önmagában nem bizonyítja, hogy a Home Assistant közvetlenül vezérli a kazán fűtési bemenetét.
+- Nem igazolt, hogy a kazán ON/OFF vezérlőbemenete pontosan milyen villamos jelet vár, és hogy a nappali termosztát és a kazán között van-e további köztes elem. A felhasználó ON/OFF-os bekötésként írta le a kapcsolatot; ezt a fizikai bekötés vizsgálata nélkül felhasználói közlésként tartjuk nyilván.
 
 ## Kapcsolódó villamos védelmi adatok
 
@@ -61,7 +61,7 @@ A későbbi tervezés során meg kell őrizni a kazán gyártó által előírt 
 ## Nyitott kérdések
 
 1. A Bosch Tronic Heat 3500 H hivatalos telepítési dokumentációjában melyik bemenet és milyen villamos jellemzőkkel alkalmas külső fűtési igény fogadására?
-2. A két Tado termosztát igénye pontosan hogyan jut el a kazánhoz; van-e köztes relé vagy más vezérlő?
+2. A fürdőszobai termosztát Tado-felhőn át a „Nappali & Konyha” termosztátot vezérli a felhasználó leírása szerint; a pontos konfiguráció és az esetleges további köztes elem még nincs ellenőrizve.
 3. Melyik kazánvédelmi és minimális áramlási követelményeket kell megőrizni, ha később a padlófűtési köröket külön szabályozzuk?
 4. A kijelzőn korábban látható „26” milyen állapotot vagy értéket jelölt?
 
