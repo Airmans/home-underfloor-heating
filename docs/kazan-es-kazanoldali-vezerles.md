@@ -24,6 +24,7 @@ A gyártói telepítési és kezelési dokumentációt a pontos típushoz kell t
 ## Meglévő fűtési igény és vezérlés
 
 - **Felhasználói pontosítás, 2026-10-27 13:23 Europe/Budapest:** a kazán közvetlen ON/OFF vezérlője a „Nappali & Konyha” Tado termosztát, amely két eres vezetékkel kapcsolódik a kazánhoz. A termosztát kazánoldali kimenetének villamos jellemzői és a tényleges kapcsok továbbra sincsenek ellenőrizve.
+- **Kazán előremenő hőmérsékletének beállítása:** 32 °C — felhasználói közlés, rögzítve 2026-10-27 13:23 Europe/Budapest; **nem ellenőrzött élő beállítás**, és nem mért tényleges előremenő vízhőmérséklet.
 - A fürdőszobai Tado termosztát adata a Tado felhőbe jut, és a felhasználó leírása szerint a felhőn keresztül a „Nappali & Konyha” termosztát vezérlése történik. Így a fürdőszobai hőigény a nappali termosztáton keresztül jut el a kazán ON/OFF bemenetéhez; a pontos Tado-konfigurációt és az adatút részleteit külön nem ellenőriztük.
 - A felhasználó korábbi leírása szerint bármelyik termosztát hőigénye fűtési igényt eredményez. Ezt a most pontosított felhőn keresztüli jelúttal együtt kell értelmezni, nem két külön közvetlen kazánbekötésként.
 - A Home Assistantban felhőalapú Tado-integráció működik. Ez önmagában nem bizonyítja, hogy a Home Assistant közvetlenül vezérli a kazán fűtési bemenetét.
