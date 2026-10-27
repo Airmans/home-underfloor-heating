@@ -52,6 +52,7 @@ A [Home Computer Architecture repó](https://github.com/Airmans/home-computer-ar
 A dokumentumok a projekt előrehaladtával, a jóváhagyott feladatok alapján kerülnek létrehozásra. A felépítést nem szabad kész felmérés látszatát keltve előre feltölteni:
 
 - `docs/` – műszaki felmérések, döntések, tervek és tesztjegyzőkönyvek.
+- [Meglévő Tado-konfiguráció és villamos elosztó – kezdeti dokumentálás](docs/meglevo-tado-konfiguracio-es-eloszto.md) – a 2026-10-27-i Tado-időprogramok, beállítások, felhasználói közlések és az elosztó fényképes megfigyelése.
 - `docs/evidence/` – releváns fényképek, címkék, rajzok és más bizonyítékok, amennyiben biztonságosan és megfelelően tárolhatók.
 - `README.md` – projektcél, munkamódszer, biztonsági szabályok és dokumentációs navigáció.
 
