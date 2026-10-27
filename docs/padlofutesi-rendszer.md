@@ -23,18 +23,36 @@ Ebben a dokumentumban kerül rögzítésre a padlófűtési oldal tényleges kia
 
 ## Hőmérséklet-monitorozás és nyomásmérő
 
+### Home Assistant / Shelly
+
+A 2026-10-27-én megosztott Home Assistant-eszközoldal és felhasználói közlés alapján:
+
 | Adat | Megállapítás | Bizonyítottság / forrás |
 | --- | --- | --- |
-| Előremenő hőmérséklet | A felhasználó közlése szerint Home Assistantban monitorozva van, csőre rögzített csőhőmérővel | **Korábbi forrásból átvett** – felhasználói közlés, 2026-10-27 |
-| Visszatérő hőmérséklet | A felhasználó közlése szerint Home Assistantban monitorozva van, csőre rögzített csőhőmérővel | **Korábbi forrásból átvett** – felhasználói közlés, 2026-10-27 |
-| Kapcsolódó eszköz | A felhasználó Shelly 1 eszközt nevezett meg a hőmérséklet-monitorozással kapcsolatban | **Részben ellenőrzött** – a pontos bekötés, hőmérséklet-érzékelő típusa és az, hogy a Shelly 1 közvetlenül vagy köztes eszközön keresztül vesz-e részt a mérésben, még nincs dokumentálva |
-| Nyomásmérő | A felhasználó közlése szerint az osztó-gyűjtő alsó gerendájának bal oldalára van rögzítve nyomásmérő | **Részben ellenőrzött** – helyszíni közeli fényképen a mérő és a skála még nem azonosított; leolvasott érték nincs rögzítve |
+| Eszköz neve | „Padlófűtés hőmérő” | **Ellenőrzött** – Home Assistant képernyőkép, 2026-10-27 |
+| Eszköztípus / modell | Shelly 1 / SHSW-1, gen1 hardver | **Ellenőrzött** – eszközinformációs képernyőkép, 2026-10-27 |
+| Firmware | 20230913-112003/v1.14.0-gcb84623 | **Ellenőrzött** – eszközinformációs képernyőkép, 2026-10-27 |
+| Eszköz IP-címe | 192.168.10.92 | **Ellenőrzött a megosztott képernyőkép alapján** – 2026-10-27; ez az eszköz akkori megjelenített IP-címe, nem garantáltan állandó cím |
+| Előremenő hőmérséklet entitás | `sensor.gepeszet_padlofutes_homero_padlofutes_eloremeno_homerseklet` | **Ellenőrzött** – a felhasználó által megadott entitásazonosító, 2026-10-27 |
+| Visszatérő hőmérséklet entitás | `sensor.gepeszet_padlofutes_homero_padlofutes_visszatero_homerseklet` | **Ellenőrzött** – a felhasználó által megadott entitásazonosító, 2026-10-27 |
+| Képernyőképen látható előremenő érték | 23,8 °C | **Ellenőrzött mint pillanatfelvétel** – Home Assistant képernyőkép, 2026-10-27; nem tekintendő tartós vagy aktuális értéknek későbbi időpontban |
+| Képernyőképen látható visszatérő érték | 23,4 °C | **Ellenőrzött mint pillanatfelvétel** – Home Assistant képernyőkép, 2026-10-27; nem tekintendő tartós vagy aktuális értéknek későbbi időpontban |
+| Mérési pontok | A felhasználó közlése szerint csőre rögzített csőhőmérők mérik az előremenő és visszatérő csövet | **Korábbi forrásból átvett** – felhasználói közlés, 2026-10-27 |
+| Érzékelők és fizikai bekötés | A HA eszközoldal két hőmérséklet-entitást mutat az eszközhöz rendelve, de a fizikai érzékelő típusa és csatlakoztatásának módja a képernyőképekből nem állapítható meg | **Részben ellenőrzött** |
 
-### A monitorozás további ellenőrzéséhez szükséges adatok
+**Megjegyzés:** a Home Assistant képernyőkép bizonyítja, hogy a két hőmérséklet-entitás a „Padlófűtés hőmérő” nevű Shelly-eszköz oldalán jelenik meg. Önmagában nem igazolja a hőmérséklet-érzékelők pontos típusát vagy fizikai bekötését. Ezeket később a mérési lánc dokumentálásakor kell tisztázni.
 
-- A Home Assistantban használt előremenő- és visszatérő-hőmérséklet entitások neve.
+### Nyomásmérő
+
+| Adat | Megállapítás | Bizonyítottság / forrás |
+| --- | --- | --- |
+| Elhelyezés | A felhasználó közlése szerint az osztó-gyűjtő alsó gerendájának bal oldalára van rögzítve nyomásmérő | **Részben ellenőrzött** – felhasználói közlés, 2026-10-27 |
+| Skála, mértékegység és leolvasott érték | Még nincs dokumentálva | **Ellenőrizetlen** – szükséges a számlap jól olvasható fényképe |
+
+## A monitorozás további ellenőrzéséhez szükséges adatok
+
 - A csőhőmérők / hőmérséklet-érzékelők pontos típusa és csatlakoztatása.
-- A Shelly 1 pontos szerepe a mérési láncban. A „Shelly 1” megnevezés önmagában nem bizonyítja, hogyan történik a hőmérséklet mérése.
+- A két hőmérséklet-entitás eszközoldalán megjelenő attribútumok, ha a mérési forrást tisztázni kell.
 - A nyomásmérő skálájának, mértékegységének és aktuális értékének fényképe, ha biztonságosan leolvasható. Az aktuális nyomásérték még nincs rögzítve.
 
 ## Még felmérendő adatok
@@ -46,7 +64,6 @@ Ebben a dokumentumban kerül rögzítésre a padlófűtési oldal tényleges kia
 | Szelepek | Szelepbetétek pontos típusa és a működtető csatlakoztathatósága |
 | Hidraulika | Szivattyú, keverőszelep, bypass és más elemek, ha vannak |
 | Jelenlegi vezérlés | Van-e már körönkénti vezérlő vagy csak központi kazánigény |
-| Hőmérséklet-mérés | HA entitások, érzékelők, mérési pontok és bekötés pontosítása |
 
 ## Biztonsági korlát
 
