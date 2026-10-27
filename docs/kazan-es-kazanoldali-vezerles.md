@@ -37,6 +37,27 @@ A felhasználó korábban az alábbi, kazánhoz kapcsolódó villamos elemeket n
 
 Ezek a felhasználói közlésből átvett adatok; a tényleges bekötési topológia, a védelmi koordináció és a vezetékek méretezése itt nincs függetlenül ellenőrizve. A dokumentum nem villamos felülvizsgálati jegyzőkönyv.
 
+
+## Gyártói kézikönyv szerinti követelmények
+
+- **Forrás:** Bosch, *Tronic Heat 3500 – Szerelési és karbantartási kézikönyv*, dokumentumazonosító **6720871226**, kiadás **2023/06**. [Hivatalos magyar nyelvű PDF](https://bosch-hu.boschhc-documents.com/download/pdf/file/6720871226).
+- **Ellenőrzés dátuma:** 2026-10-27, Europe/Budapest.
+- **Bizonyítottság:** a kézikönyvben szereplő gyártói előírások **Ellenőrzöttek**; a meglévő telepítés megfelelősége ettől külön kérdés, **Ellenőrizetlen**.
+
+### Vezérlési módok
+
+A kézikönyv több külső vezérlési módot tárgyal, köztük szobatermosztátos és távoli vezérlési megoldásokat (5.2.3–5.2.9. szakasz, hozzávetőleg 23–26. PDF-oldal). A megfelelő bemenet és paraméterezés az alkalmazott módtól függ. A kézikönyv 7.3.1. szakasza olyan kéttermosztátos működést is leír, amelyben bármelyik termosztát bekapcsolhatja a kazánt, a kazán leállításához pedig mindkét termosztátnak kikapcsolt állapotban kell lennie.
+
+**Fontos korlátozás:** ez a gyártó által dokumentált lehetőség összhangban lehet a felhasználó által leírt működéssel, de önmagában nem bizonyítja, hogy a jelenlegi Tado-rendszer pontosan így van bekötve. A bemeneti kapcsok, a köztes relé esetleges megléte, valamint a paraméterek tényleges értékei nem lettek ellenőrizve. A kézikönyvben szereplő PA00 és SE07 paraméterek szerepét az alkalmazott kapcsolási módhoz kötötten kell értelmezni; jelenlegi értékük ismeretlen.
+
+### Minimális üzemi nyomás
+
+A kézikönyv 6.1. szakasza legalább **0,6 bar** üzemi nyomást ír elő. Ez gyártói követelmény, nem a rendszer jelenlegi nyomásának mérése. A tényleges nyomást a meglévő fotókból nem tekintjük hitelesen megállapítottnak.
+
+### Hatás a későbbi körönkénti szabályozás tervezésére
+
+A későbbi tervezés során meg kell őrizni a kazán gyártó által előírt védelmi és üzemeltetési feltételeit. Különösen nem feltételezhető, hogy a padlófűtési körök lezárása a kazán számára megfelelő vízáramlás mellett is biztonságos; ezt a teljes hidraulikai kialakítás és a gyártói előírások alapján kell értékelni. Jelen felmérési lépésben nem történt beavatkozás, paraméter-lekérdezés, kazánpróba vagy nyomásmérés.
+
 ## Nyitott kérdések
 
 1. A Bosch Tronic Heat 3500 H hivatalos telepítési dokumentációjában melyik bemenet és milyen villamos jellemzőkkel alkalmas külső fűtési igény fogadására?
