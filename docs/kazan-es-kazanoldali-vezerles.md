@@ -95,3 +95,12 @@ Nem bontunk burkolatot, nem végzünk feszültség alatti mérést, nem vizsgál
 | Kazán előremenő-hőmérséklet beállítása | 32 °C | Beállított érték; nem igazolja a tényleges előremenő vízhőmérsékletet |
 
 A paraméterek funkcióját és azt, hogy az adott vezérlési módhoz megfelelőek-e, csak a gyártói kézikönyv alapján szabad értelmezni. A PA00 aktuális értéke a felhasználó közlése szerint 01; a korábbi „ismeretlen” státusz erre az értékre már nem érvényes, de a helyszíni leolvasás és a paraméter jelentésének ellenőrzése továbbra is hiányzik. Az SE07 értékét a felhasználó nem közölte, ezért az továbbra is ismeretlen. Nem történt beállításmódosítás vagy élő rendszerpróba.
+
+
+## SE paraméterek hozzáférhetősége — felhasználói pontosítás
+
+**Rögzítés dátuma:** 2026-10-27, Europe/Budapest  
+**Forrás:** felhasználói közlés.  
+**Bizonyítottság:** **Felhasználói közlés; a szervizmenü értékei nem hozzáférhetők a felhasználó számára.**
+
+A felhasználó tájékoztatása szerint az SE paraméterek alapértelmezettek, és azokhoz nem fér hozzá. Emiatt az SE07 egyedi aktuális értékét nem tekintjük leolvasott vagy ellenőrzött adatnak. Az alapértelmezett érték pontos számszerű értékét és funkcióját a gyártói dokumentáció vagy jogosult szerviz tudja megerősíteni. A felmérés nem próbálja megkerülni a hozzáférési korlátozást, és nem javasol jogosulatlan paramétermódosítást.
