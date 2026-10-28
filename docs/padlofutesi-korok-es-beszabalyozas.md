@@ -49,3 +49,93 @@ A jelenlegi beszabályozás a későbbi körönkénti szabályozás tervezésén
 ## Biztonsági korlát
 
 Ez a dokumentum csak megfigyelési és tervezési célú rögzítés. A körök elzárása/nyitása, a `Poz` értékek módosítása, a hidraulikai beállítások megváltoztatása vagy a fűtést befolyásoló próba külön, konkrét felhasználói jóváhagyást igényel.
+
+
+## Áramlásmérők 2026-10-28-i leolvasása
+
+**Rögzítés időpontja:** 2026-10-28, Europe/Budapest.  
+**Forrás:** a felhasználó által ugyanazon a napon küldött áramlásmérő-fényképek és azokhoz adott leolvasások.  
+**Bizonyítottság:** felhasználó által leolvasott értékek; a fényképek vizuálisan támogatják az értelmezést, de ez nem kalibrált mérés. Az áramlásmérő skáláján a „L/min” jelölés látható.
+
+| Kör | Leolvasott térfogatáram | Állapot / megjegyzés | Bizonyítottság |
+|---:|---:|---|---|
+| 1 | 3,55 L/min | A felhasználó leolvasása | Részben ellenőrzött |
+| 2 | 3,20 L/min | A felhasználó leolvasása | Részben ellenőrzött |
+| 3 | 2,68 L/min | Korábbi 3,4-es leolvasást a felhasználó korrigálta | Részben ellenőrzött |
+| 4 | 2,72 L/min | Korábbi 2,5-ös leolvasást a felhasználó korrigálta | Részben ellenőrzött |
+| 5 | 2,50 L/min | A felhasználó leolvasása | Részben ellenőrzött |
+| 6 | 3,12 L/min | A felhasználó leolvasása | Részben ellenőrzött |
+| 7 | 0 L/min | A felhasználó ellenőrizte; a kör le van zárva | Ellenőrzött felhasználói közlés alapján |
+| 8 | 2,95 L/min | A felhasználó leolvasása | Részben ellenőrzött |
+
+Az értékek a fényképek készítésekor fennálló állapotot rögzítik, nem garantáltan aktuálisak későbbi időpontban. A kör 7-es 0 L/min értéke a felhasználó közlése szerint a kör szándékos lezárásából ered. A fenti adatokat nem használjuk automatikusan új beszabályozási célértékként.
+
+**Biztonság:** a leolvasás dokumentálása nem jelent engedélyt bármely kör nyitására/zárására vagy a térfogatáram módosítására. Minden ilyen beavatkozás külön, konkrét felhasználói jóváhagyást igényel.
+
+## Körök, helyiségek, nyomvonalak és hőhatások – frissített értelmezés (2026-10-28)
+
+### Felhasználó által kijelölt elsődleges zónák
+
+| Kör | Elsődleges vezérlési hozzárendelés | Terület |
+|---:|---|---:|
+| 1 | Fürdő, WC, előszoba | 14,1 m² |
+| 2 | Előszoba, konyha | 11,8 m² |
+| 3 | Zoé szobája | 13,5 m² |
+| 4 | Zsombi szobája | 13,5 m² |
+| 5 | Konyha | 19,8 m² |
+| 6 | Nappali | 19,5 m² |
+| 7 | Háló | 11 m² |
+| 8 | Dolgozó, gardrób | 11 m² |
+
+A terület- és zónacímkék a felhasználó által megadott körkiosztásból származnak. A 4. kör a felhasználó pontosítása szerint a konyhát is fűti; ezért a 4. kör Zsombi szobáján túl a konyhához is hőleadási kapcsolatot kell rendelni. A konyha a felhasználó szerint a 4. és az 5. körből is kap fűtést. A 4. kör konyhai hőleadásának pontos térbeli kiterjedése és aránya a jelenleg elérhető információból nem számszerűsíthető.
+
+### Csővezetési útvonalak
+
+- A 2., 3. és 4. kör csöve a fürdőn (az 1-es kör helyiségcsoportján) keresztül halad.
+- Az 5. és 6. kör közvetlenül a háztartási helyiségből érkezik.
+- A 7. kör csöve a 8. kör felső helyiségén, a dolgozón keresztül halad.
+- A körök teljes padlón belüli nyomvonala és a köztes csőszakaszok pontos hőleadása nincs teljes egészében felmérve.
+
+### Nyitott légterek
+
+A felhasználó által 2026-10-28-án megadott alaprajzi értelmezés:
+
+1. A nappali és a konyha egy nagy, egybefüggő légtér.
+2. A nappali–konyha tér és az előszoba részben ajtó nélküli, nyitott kapcsolatban áll.
+3. A háló és a gardrób között nincs ajtó.
+4. A dolgozó jellemzően nyitott a háló felé.
+5. A fürdő és a háztartási helyiség között nincs ajtó.
+
+Ezek alapján a helyiségek közötti hőmérsékleti hatás nem kizárólag a padlócsövek helyzetétől függ: a nyitott légterek miatt egy kör más helyiségek komfortjára is hatással lehet. A hatás mértéke jelenleg nincs műszeresen elkülönítve.
+
+### Felhasználói tapasztalat a jelenlegi beszabályozásról
+
+- A 7. kört a felhasználó lezárta, mert a háló–gardrób–dolgozó blokk túl meleg volt. A gardrób a háló felé nyitott; a dolgozó is jellemzően nyitott a háló felé.
+- A 8. kör nem zárható le a jelenlegi komfortcél mellett, mert a felhasználó naponta dolgozik a dolgozóban, és az ablakot gyakran nyitja; ilyenkor a fűtés fontos a komforthoz.
+- A 2. és 3. kör helyiségei a felhasználó tapasztalata szerint 4–5 °C-kal hűvösebbek voltak a többi helyiségnél, ezért ezeket korábban feljebb állította.
+- A felhasználó a körök területét korábbi hőkamerás vizsgálat alapján határozta meg. A körökhöz összesen 114,2 m²-t rendelt; a 6,86 m²-es, körrel külön nem jelölt háztartási helyiséggel együtt 121,2 m² adódik, amely a felhasználó szerint megfelel a 121,36 m²-es hasznos alapterületnek. Ez a számtani egyezés a felhasználó korábbi felmérésének konzisztenciáját támogatja, de önmagában nem független geometriai vagy hőtechnikai validáció.
+
+### Épületadatok és hőtechnikai értelmezés
+
+- Belmagasság: 2,55 m.
+- Könnyűszerkezetes ROTAREX acélvázas falazat; a felhasználó által idézett műszaki leírás szerint 8 cm kőzetgyapot a falvázban és 15 cm EPS külső hőszigetelés.
+- Padló: 10 cm EPS100.
+- Tető: 30 cm Rockwool Multirock kőzetgyapot.
+- Nyílászárók: a megadott műszaki leírásban Uw ≤ 0,8 W/m²K.
+
+**Forrásminősítés:** a fenti szerkezeti adatok a felhasználó által idézett építészeti műszaki leírásból származnak; helyszíni rétegrend-feltárás nem történt. A tényleges helyiségenkénti hőveszteség és a szükséges térfogatáram ezekből az adatokból önmagában nem számítható ki.
+
+## Tervezési reláció: melyik kör hogyan hathat más helyiségekre?
+
+| Kör | Közvetlen / elsődleges hatás | Lehetséges további hatás | Miért |
+|---:|---|---|---|
+| 1 | Fürdő, WC, előszoba | Háztartási helyiség | A fürdő és a háztartási helyiség között nincs ajtó; az előszoba más nyitott zónákkal is kapcsolatban van |
+| 2 | Előszoba, konyha | Nappali | A konyha–nappali egybefüggő tér, az előszoba részben nyitott a térhez |
+| 3 | Zoé szobája | Fürdőn átvezető csőszakasz hőleadása | A cső a fürdőn keresztül halad; a hatás mértéke nem ismert |
+| 4 | Zsombi szobája | Konyha; fürdőn átvezető csőszakasz | A felhasználó szerint a konyhát is a 4. kör és az 5. kör fűti |
+| 5 | Konyha | Nappali, részben előszoba | Közös vagy nyitott légtérkapcsolat |
+| 6 | Nappali | Konyha, részben előszoba | Közös vagy nyitott légtérkapcsolat |
+| 7 | Háló | Gardrób, dolgozó | Nyitott légkapcsolat; a kör jelenleg lezárt |
+| 8 | Dolgozó, gardrób | Háló | Nyitott légkapcsolat; a dolgozó hőigényét a gyakori ablaknyitás is befolyásolja |
+
+A táblázat tervezési hipotézis, nem számszerű hőátadási modell. A helyiségenkénti hőmérséklet-érzékelés és a későbbi, külön jóváhagyott mérési terv segíthet elkülöníteni a közvetlen körhatást, az átvezető csövek hatását és a nyitott légterek hatását. A körönkénti szabályozás tervezésénél minden körhöz elsődleges vezérlési zónát kell rendelni, miközben a másodlagos hőhatásokat is figyelembe kell venni.
