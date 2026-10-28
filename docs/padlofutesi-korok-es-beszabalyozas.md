@@ -139,3 +139,45 @@ Ezek alapján a helyiségek közötti hőmérsékleti hatás nem kizárólag a p
 | 8 | Dolgozó, gardrób | Háló | Nyitott légkapcsolat; a dolgozó hőigényét a gyakori ablaknyitás is befolyásolja |
 
 A táblázat tervezési hipotézis, nem számszerű hőátadási modell. A helyiségenkénti hőmérséklet-érzékelés és a későbbi, külön jóváhagyott mérési terv segíthet elkülöníteni a közvetlen körhatást, az átvezető csövek hatását és a nyitott légterek hatását. A körönkénti szabályozás tervezésénél minden körhöz elsődleges vezérlési zónát kell rendelni, miközben a másodlagos hőhatásokat is figyelembe kell venni.
+
+## Verziókezelt alaprajzi bizonyítékok (2026-10-28, Europe/Budapest)
+
+A felhasználó által a GitHubon elhelyezett négy tervfájl a `docs/evidence/` mappában található. Ezeket a körök és a helyiségek közötti kapcsolatok dokumentálására használjuk; nem tekintjük a színezett ábrákat méretezett csőfektetési tervnek.
+
+- [PF-AL-00 – Eredeti építészeti alaprajz, É-01, 1:100 (PDF)](evidence/PF-AL-00-epiteszeti-alaprajz-eredeti-E-01.pdf) – eredeti tervforrás.
+- [PF-AL-01 – Nyitott légtér: nappali és konyha (PNG)](evidence/PF-AL-01-nyitott-legterek-nappali-konyha.png) – a nappali–konyha egybefüggő terének és a körök területi jelölésének szemléltetése.
+- [PF-AL-02 – Nyitott légterek és helyiségkapcsolatok (PNG)](evidence/PF-AL-02-nyitott-legterek-es-kapcsolatok.png) – háló–gardrób, nappali–előszoba, illetve fürdő–háztartási helyiség kapcsolat.
+- [PF-AL-03 – Padlófűtési körök és helyiségek (PNG)](evidence/PF-AL-03-padlofutesi-korok-es-helyisegek.png) – a nyolc kör felhasználó által meghatározott helyiség- és terület-hozzárendelése.
+
+### Az alaprajzokból és felhasználói pontosításokból rögzített relációk
+
+| Kör | Elsődleges vezérlési zóna | További, figyelembe veendő kapcsolat | A kapcsolat alapja | Bizonyítottság |
+|---:|---|---|---|---|
+| 1 | Fürdő, WC, előszoba | Háztartási helyiség | A fürdő és a háztartási helyiség között nincs ajtó; a kör zónája az előszobát is tartalmazza | Zónakiosztás: felhasználó által meghatározott; nyitott kapcsolat: felhasználói közlés |
+| 2 | Előszoba, konyha | Nappali | Az előszoba részben ajtó nélkül kapcsolódik a nappali–konyha térhez | Felhasználói közlés és alaprajz |
+| 3 | Zoé szobája | Fürdőn átvezető csőszakasz; közvetett légtérhatás csak akkor, ha a tényleges ajtókapcsolat ezt lehetővé teszi | A cső a fürdőn keresztül halad; a teljes padlóbeli nyomvonal nem dokumentált | Útvonal: felhasználói közlés; hőhatás mértéke: ellenőrizetlen |
+| 4 | Zsombi szobája | Konyha; fürdőn átvezető csőszakasz | A felhasználó szerint a konyhát a 4. és az 5. kör is fűti | Felhasználói közlés; a konyhai hőleadás aránya nem ismert |
+| 5 | Konyha | Nappali, részben előszoba | Közös nappali–konyha tér, részben nyitott előszoba-kapcsolat | Zónakiosztás és légtérkapcsolat: felhasználói közlés |
+| 6 | Nappali | Konyha, részben előszoba | Közös nappali–konyha tér, részben nyitott előszoba-kapcsolat | Zónakiosztás és légtérkapcsolat: felhasználói közlés |
+| 7 | Háló | Gardrób és dolgozó felé fennálló nyitott légkapcsolat | A 7-es kör a felhasználó közlése szerint lezárt; a gardrób nyitott a hálóra, a dolgozó is jellemzően nyitott a háló felé; a cső a dolgozón keresztül halad | Nyitott kapcsolatok és lezárás: felhasználói közlés; az áramlásmérő 0 L/min értéke külön fényképes leolvasással alátámasztott |
+| 8 | Dolgozó, gardrób | Háló | A dolgozó jellemzően nyitott a háló felé; gyakori ablaknyitás befolyásolja a dolgozó komfortigényét | Felhasználói közlés |
+
+**Értelmezési korlát:** a fenti táblázat a vezérlési logika megtervezéséhez készült relációs modell, nem számszerű hőátadási vagy hidraulikai modell. A csövek köztes szakaszainak hőleadása, a körönkénti hőteljesítmény és a helyiségek közötti hőmérsékleti hatás jelenleg nincs elkülönítetten megmérve.
+
+### Épületadatok a tervezési modellhez
+
+A felhasználó 2026-10-28-án megadott építészeti műszaki leírása szerint:
+- belmagasság: 2,55 m;
+- könnyűszerkezetes, ROTAREX acélvázas fal;
+- falvázban 8 cm kőzetgyapot és kívül 15 cm EPS;
+- padlóban 10 cm EPS100;
+- tetőben 30 cm Rockwool Multirock kőzetgyapot;
+- nyílászárók megadott Uw értéke legfeljebb 0,8 W/m²K.
+
+**Forrásminősítés:** korábbi/átvett építészeti műszaki leírás és felhasználói közlés; helyszíni rétegrend-feltárás nem történt. Ezek az adatok önmagukban nem elegendők a helyiségenkénti hőveszteség vagy a szükséges térfogatáram kiszámításához.
+
+### Területi összegzés – felhasználói ellenőrzés alapján
+
+A felhasználó a körök által lefedett területet korábbi hőkamerás vizsgálat alapján összesen 114,2 m²-re számolta. A külön körrel nem jelölt, 6,86 m²-es háztartási helyiséggel együtt 121,2 m² adódik, ami közel van a megadott 121,36 m² hasznos alapterülethez. Ez a számtani egyezés konzisztencia-ellenőrzés, nem független geometriai mérés.
+
+**Fontos döntés:** a felhasználó nem kéri a jelenlegi beszabályozási állapot célértékként való megőrzését. A dokumentációban a kör-hozzárendelések és a tervrajzi kapcsolatok a későbbi szabályozási logika alapjai; a korábbi áramlás- és beállítási értékek nem tekinthetők javasolt célértékeknek. Bármely tényleges beállításmódosítás külön jóváhagyást igényel.
