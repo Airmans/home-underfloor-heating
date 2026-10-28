@@ -114,3 +114,29 @@ A felhasználó által megadott építészeti műszaki leírás szerint:
 - megadott belmagasság: 2,55 m.
 
 Bizonyítottság: az alaprajz mint feltöltött forrás ellenőrzött; a rétegrendek és belmagasság a felhasználó által idézett műszaki leírásból származnak, helyszíni rétegrend-feltárás nem történt. A helyiségek tényleges hővesztesége és a szükséges körönkénti térfogatáram ezekből az adatokból önmagában nem számítható ki.
+
+
+## Körönkénti leolvasások és helyiségek közötti kapcsolatok – 2026-10-28
+
+A részletes, körönkénti táblázatot, a felhasználó által leolvasott áramlásértékeket, a csővezetési nyomvonalakat, a nyitott légtereket és a tervezési hőhatás-relációt a [Padlófűtési körök és jelenlegi beszabályozás](padlofutesi-korok-es-beszabalyozas.md) dokumentum tartalmazza.
+
+A 2026-10-28-i felhasználói leolvasások:
+- 1. kör: 3,55 L/min
+- 2. kör: 3,20 L/min
+- 3. kör: 2,68 L/min
+- 4. kör: 2,72 L/min
+- 5. kör: 2,50 L/min
+- 6. kör: 3,12 L/min
+- 7. kör: 0 L/min – a felhasználó közlése szerint lezárt kör
+- 8. kör: 2,95 L/min
+
+A leolvasások fényképek és felhasználói értelmezés alapján részben ellenőrzöttek; nem kalibrált mérések, és nem tekintendők automatikus beszabályozási célértéknek.
+
+A felhasználó által jelzett nyitott légterek:
+- nappali–konyha egybefüggő tér, részben nyitott kapcsolattal az előszoba felé;
+- háló–gardrób ajtó nélküli kapcsolat, a dolgozó jellemzően nyitott a háló felé;
+- fürdő–háztartási helyiség ajtó nélküli kapcsolat.
+
+A felhasználó szerint a 2. és 3. kör helyiségei korábban 4–5 °C-kal hűvösebbek voltak a többi helyiségnél; a 7. kört a háló–gardrób–dolgozó blokk túlmelegedése miatt zárta le. A 4. és 5. kör a felhasználó szerint egyaránt fűti a konyhát. Ezek felhasználói tapasztalatok és közlések, nem egyidejű, naplózott helyiséghőmérséklet-mérések.
+
+**Forrás és ellenőrzés dátuma:** felhasználói fényképek, alaprajzok és leírás, 2026-10-28, Europe/Budapest. A képfájlok repo-ba történő bináris feltöltése és átnevezése külön ellenőrzést igényel; a dokumentumhivatkozás önmagában nem igazolja a képek GitHubon való tárolását.
