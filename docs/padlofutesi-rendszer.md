@@ -72,3 +72,45 @@ A nyolc kör helyiség-hozzárendelése, a táblázat szerinti területek, korre
 ## Biztonsági korlát
 
 A felmérés alapértelmezésben fényképes megfigyelés és dokumentumgyűjtés. Szelepek állítását, körök elzárását, hidraulikai beszabályozást, elektromos szerelést vagy a fűtés tényleges működését befolyásoló tesztet külön, konkrét felhasználói jóváhagyás nélkül nem szabad végezni.
+
+
+## Csővezetési nyomvonalak és helyiségek közötti hőhatások (2026-10-28, Europe/Budapest)
+
+Forrás: felhasználói közlés az osztó-gyűjtő és a helyiségek elrendezéséről, valamint a megosztott áttekintő fénykép és alaprajz. A nyomvonalak a háztartási helyiségből induló csövek megadott útját rögzítik; a teljes csőhossz és a padlón belüli pontos fektetési útvonal továbbra sem ismert.
+
+| Kör | Felhasználó által közölt nyomvonal |
+|---:|---|
+| 1 | A fürdő/WC/előszoba fűtési zónája; a háztartási helyiségtől induló pontos átvezetés még nincs részletezve |
+| 2 | A fürdőn (az 1-es kör helyiségcsoportján) keresztül vezet |
+| 3 | A fürdőn (az 1-es kör helyiségcsoportján) keresztül vezet |
+| 4 | A fürdőn (az 1-es kör helyiségcsoportján) keresztül vezet |
+| 5 | Közvetlenül a háztartási helyiségből érkezik |
+| 6 | Közvetlenül a háztartási helyiségből érkezik |
+| 7 | A 8-as kör felső helyiségén, a dolgozón keresztül vezet |
+| 8 | A dolgozó és gardrób fűtési köre; a 7-es kör dolgozón keresztüli nyomvonala mellett a teljes saját nyomvonal nincs külön feltérképezve |
+
+A helyiségen keresztül vezetett csőszakasz hőt adhat le az átvezetett helyiségnek akkor is, ha a kör a helyiségen csak áthalad. Ennek mértéke a cső szigetelésétől, a fektetés módjától, a csőhossztól és a kör üzemi állapotától függ; ezekre jelenleg nincs elegendő adat, ezért a hatás nagysága ellenőrizetlen.
+
+## Helyiségkapcsolatok és 7. kör lezárása (felhasználói közlés, 2026-10-28)
+
+- A háló (7. kör) és a gardrób (a 8. kör része) között jellemzően nyitott kapcsolat van.
+- A dolgozó, amely szintén a 8. körhöz tartozik, jellemzően nyitott a háló felé.
+- A felhasználó tapasztalata szerint a háló–gardrób–dolgozó blokk túl meleg volt, ezért lezárta a 7. kört.
+- A dolgozóban napközben rendszeres a tartózkodás, és az ablak gyakori nyitása miatt a 8. kör működése fontos a komforthoz.
+- A 2. és 3. kör helyiségei a felhasználó tapasztalata szerint a többihez képest 4–5 °C-kal hűvösebbek voltak; ezért e körök térfogatáramát korábban növelte.
+
+Ezek felhasználói tapasztalatok, nem egyidejű, naplózott helyiséghőmérséklet-mérések. A tervezésben a zónák közötti légkapcsolatot és a dolgozó változó szellőztetési hőterhelését figyelembe kell venni. A 7. kör automatikus újranyitása vagy bármely hidraulikai beállítás módosítása nem része ennek a dokumentálásnak, és külön jóváhagyás nélkül nem végezhető.
+
+## Épület szerkezeti adatai és alaprajzi forrás (2026-10-28)
+
+A felhasználó feltöltötte az É-01 alaprajz.pdf fájlt (1 oldal; földszinti alaprajz, m=1:100, 2022. január). A rajz helyiséglistája az eredeti építészeti terv szerinti neveket és alapterületeket tartalmazza; a fűtési körökhöz rendelt területek ettől eltérhetnek, mert a körök több helyiséget is lefednek, illetve a felhasználó külön fűtési zónatérképet adott.
+
+A felhasználó által megadott építészeti műszaki leírás szerint:
+- könnyűszerkezetes, ROTAREX galvanizált acélvázas fal;
+- a falvázban 8 cm kőzetgyapot, kívül 15 cm EPS hőszigetelés;
+- a padlóban 10 cm EPS100;
+- a tetőben 30 cm Rockwool Multirock kőzetgyapot;
+- a homlokzati nyílászárókra Uw ≤ 0,8 W/m²K szerepel a leírásban;
+- megadott belmagasság: 2,55 m.
+
+Bizonyítottság: az alaprajz mint feltöltött forrás ellenőrzött; a rétegrendek és belmagasság a felhasználó által idézett műszaki leírásból származnak, helyszíni rétegrend-feltárás nem történt. A helyiségek tényleges hővesztesége és a szükséges körönkénti térfogatáram ezekből az adatokból önmagában nem számítható ki.
