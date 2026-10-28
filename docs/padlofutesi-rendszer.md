@@ -1,7 +1,7 @@
 # Padlófűtés – meglévő hidraulikai rendszer és körök
 
 **Dokumentumállapot:** folyamatban lévő helyszíni felmérés.  
-**Utolsó frissítés:** 2026-10-27, Europe/Budapest.  
+**Utolsó frissítés:** 2026-10-28, Europe/Budapest.  
 **Bizonyítottság:** az alábbi megállapításoknál külön jelölve.
 
 ## Cél és hatókör
@@ -55,9 +55,18 @@ A 2026-10-27-én megosztott Home Assistant-eszközoldal és felhasználói közl
 - A két hőmérséklet-entitás eszközoldalán megjelenő attribútumok, ha a mérési forrást tisztázni kell.
 - A nyomásmérő skálájának, mértékegységének és aktuális értékének fényképe, ha biztonságosan leolvasható. Az aktuális nyomásérték még nincs rögzítve.
 
-## Kapcsolódó dokumentum – körkiosztás és beszabályozás
+## Kapcsolódó dokumentum – körök, helyiségek és alaprajzi bizonyítékok
 
-A nyolc kör helyiség-hozzárendelése, a táblázat szerinti területek, korrekciós tényezők és a felhasználó által megerősített jelenlegi `Poz` beállítások külön dokumentumban szerepelnek: [Padlófűtési körök és jelenlegi beszabályozás](padlofutesi-korok-es-beszabalyozas.md). Az eredeti Excel-forrás tervezett repo-útvonala: `evidence/padlofutes-beallitas-20261027.xlsx`; feltöltésre még vár.
+A körök helyiségekhez rendelése, a nyitott légterek, a felhasználó által közölt csővezetési útvonalak és a lehetséges hőhatás-relációk a [Padlófűtési körök és beszabályozás](padlofutesi-korok-es-beszabalyozas.md) dokumentumban szerepelnek.
+
+A verziókezelt tervrajzok:
+- [PF-AL-00 – Eredeti építészeti alaprajz, É-01, 1:100 (PDF)](evidence/PF-AL-00-epiteszeti-alaprajz-eredeti-E-01.pdf)
+- [PF-AL-01 – Nyitott légtér: nappali és konyha (PNG)](evidence/PF-AL-01-nyitott-legterek-nappali-konyha.png)
+- [PF-AL-02 – Nyitott légterek és helyiségkapcsolatok (PNG)](evidence/PF-AL-02-nyitott-legterek-es-kapcsolatok.png)
+- [PF-AL-03 – Padlófűtési körök és helyiségek (PNG)](evidence/PF-AL-03-padlofutesi-korok-es-helyisegek.png)
+
+A felhasználó 2026-10-28-i GitHub-képernyőképe a négy fájl jelenlétét és a fájlneveket alátámasztja. A körökhöz rendelt helyiségek és területek a felhasználó korábbi hőkamerás azonosításából és az általa megadott alaprajzi értelmezésből származnak; a színezett ábrák nem méretezett csőfektetési tervek.
+
 
 ## Még felmérendő adatok
 
@@ -139,4 +148,4 @@ A felhasználó által jelzett nyitott légterek:
 
 A felhasználó szerint a 2. és 3. kör helyiségei korábban 4–5 °C-kal hűvösebbek voltak a többi helyiségnél; a 7. kört a háló–gardrób–dolgozó blokk túlmelegedése miatt zárta le. A 4. és 5. kör a felhasználó szerint egyaránt fűti a konyhát. Ezek felhasználói tapasztalatok és közlések, nem egyidejű, naplózott helyiséghőmérséklet-mérések.
 
-**Forrás és ellenőrzés dátuma:** felhasználói fényképek, alaprajzok és leírás, 2026-10-28, Europe/Budapest. A képfájlok repo-ba történő bináris feltöltése és átnevezése külön ellenőrzést igényel; a dokumentumhivatkozás önmagában nem igazolja a képek GitHubon való tárolását.
+**Forrás és ellenőrzés dátuma:** felhasználói fényképek, alaprajzok és leírás, 2026-10-28, Europe/Budapest. A négy tervfájl GitHubon való jelenlétét a felhasználó 2026-10-28-i képernyőképe alátámasztja.
