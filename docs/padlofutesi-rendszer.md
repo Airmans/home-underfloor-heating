@@ -252,3 +252,18 @@ További értékeléshez releváns a tényleges kazán-/szivattyúállapot vagy 
 - A szivattyú CI beállításának optimalizálása és a jövőbeni zónazárások melletti minimumáramlás biztosítása a későbbi tervezés tárgya, nem a jelen komponensleltár zárási akadálya.
 
 **Zárási értékelés:** a PF-01.02 a hozzáférhető elemek leltározásának és a bizonyítottság rögzítésének szintjén lezárásra kész. A korábbi asszisztensi válaszban felsorolt bypass/keverőkör „végleges igazolását” és a már megtárgyalt csatlakozási kérdés újranyitását nem kezeljük további kötelező felmérési lépésként. Ez a bejegyzés önmagában nem változtat státuszt, és nem engedélyez élő rendszerbeavatkozást.
+
+
+## PF-01.02 — Lezárási döntés, 2026-10-30
+
+**Állapot: Done — felmérési és dokumentációs szinten lezárva.**  
+**Jóváhagyás forrása:** a felhasználó kifejezett utasítása: „rendben zárjuk le”.  
+**Lezárás dátuma:** 2026-10-30, Europe/Budapest.
+
+A hozzáférhető osztó-gyűjtő, körök, mérők és hidraulikai elemek leltára, a fotó- és dokumentumhivatkozások, továbbá a bizonyítottsági szintek rögzítve vannak. Azonosítottuk a Taco ES2 C 15-60/130 szivattyút és a felhasználó által helyszínen megerősített CI állást; a gyártói üzemmódleírást és a 48 órás HA-előzmények korlátozott értékelését dokumentáltuk. A termosztát NO–COM ↔ B5–B6 bekötési bizonyítékai a kapcsolódó kazán- és termosztátdokumentumokban szerepelnek.
+
+A felmérésben külön bypass és keverőkör nem volt azonosítható; a megfigyelési korlátok megmaradnak. A FERRO-adatlap szerinti M30×1,5 termoelektromos fej fogadása már rögzített bemenet. Az osztó pontos altípusa a korábbi felhasználói döntés alapján nem önálló zárási feltétel. Ezek miatt további felmérési lépést nem írunk elő a PF-01.02 lezárásához.
+
+**Későbbi tervezés:** a konkrét működtető kiválasztása és illesztése, a minimumáramlás biztosítása a körök automatikus záródásakor, valamint a szivattyúbeállítás szükség szerinti értékelése a PF-02.01 és PF-02.02 feladata. A lezárás nem minősíti ezeket már megoldottnak, és nem igazolja a jelenlegi beállítás optimális voltát.
+
+A korábbi In progress és „lezárásra kész” feljegyzések történeti állapotok; az aktuális zárási döntés ez a bejegyzés. A dokumentálás során nem végeztünk élő rendszerbeavatkozást; a lezárás nem engedélyez szerelést, konfigurációmódosítást vagy fűtést befolyásoló tesztet.
