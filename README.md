@@ -2,7 +2,7 @@
 
 A projekt célja a meglévő otthoni padlófűtési rendszer bizonyítékokra épülő felmérése, a körönkénti szabályozás megtervezése, valamint a biztonságos megvalósításhoz szükséges műszaki és dokumentációs terv elkészítése.
 
-> **Jelenlegi állapot:** előkészítés. A műszaki felmérés és minden beavatkozás csak a PF-00 hatókörének és feladatlistájának kifejezett jóváhagyása után kezdhető meg.
+> **Jelenlegi állapot (2026-10-30):** PF-00 jóváhagyva és lezárva; a PF-01 felmérés megfigyelési és adatgyűjtési keretben folyamatban van. Az élő rendszerre ható műveletekhez külön jóváhagyás szükséges.
 
 ## Projektközpont és feladatkezelés
 
