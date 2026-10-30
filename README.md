@@ -61,6 +61,33 @@ A dokumentumok a projekt előrehaladtával, a jóváhagyott feladatok alapján k
 
 A fájlnevek és a dokumentumjegyzék a PF-00 jóváhagyása után, a ténylegesen szükséges dokumentumok alapján pontosíthatók.
 
+
+## Dokumentációs és forrásjegyzék
+
+### Műszaki dokumentumok
+
+- [Kazán és kazánoldali vezérlés](docs/kazan-es-kazanoldali-vezerles.md)
+- [Padlófűtési rendszer és hidraulika](docs/padlofutesi-rendszer.md)
+- [Padlófűtési körök és beszabályozás](docs/padlofutesi-korok-es-beszabalyozas.md)
+- [Tado-termosztátok és időprogramok](docs/tado-termosztatok-es-idoprogramok.md)
+- [Villamos elosztó](docs/villamos-eloszto.md)
+- [Home Assistant-entitásleltár – ellenőrzési jegyzőkönyv](docs/home-assistant-entitasleltar-2026-10-30.md)
+
+### Alaprajzok és eredeti bizonyítékok
+
+- [PF-AL-00 – Eredeti építészeti alaprajz](docs/evidence/PF-AL-00-epiteszeti-alaprajz-eredeti-E-01.pdf)
+- [PF-AL-01 – Nappali és konyha nyitott légtere](docs/evidence/PF-AL-01-nyitott-legterek-nappali-konyha.png)
+- [PF-AL-02 – Nyitott terek és kapcsolatok](docs/evidence/PF-AL-02-nyitott-legterek-es-kapcsolatok.png)
+- [PF-AL-03 – Padlófűtési körök és helyiségek](docs/evidence/PF-AL-03-padlofutesi-korok-es-helyisegek.png)
+- [Padlófűtési körök és beállítások – forrásmunkafüzet](docs/evidence/padlofutes-beallitas-20261027.xlsx)
+
+### Home Assistant-entitásnyilvántartás
+
+- [Aktív Google Sheets – öt összevont munkalap](https://docs.google.com/spreadsheets/d/1C8MwPN9XDqlxIxq9Y7W9ttQdPe2uHFV2CqkSH99d3x0/edit)
+- [Teljes archív Google Sheets – 43 munkalap](https://docs.google.com/spreadsheets/d/1bVRrP_qyaME_BwdqW0-GveBN2Kbxl0v_vSNa11RjfAo/edit)
+
+A 38 eredeti munkalap 3407 forrássorából 3401 egyedi entitás került az aktív leltárba. A forrásegyezőség, a hat többforrású entitás és a fennmaradó kérdések a [jegyzőkönyvben](docs/home-assistant-entitasleltar-2026-10-30.md) találhatók. A fűtési szempontból releváns HA-érzékelők célzott felmérése még nyitott.
+
 ## Dátumok és változáskövetés
 
 A projekt dokumentációjában a dátumokat és időbélyegeket **Europe/Budapest** időzóna szerint kell rögzíteni. A dokumentumokban különüljön el a felmérés dátuma, a dokumentum létrehozásának vagy módosításának dátuma és az adat forrásának dátuma, ha ezek eltérnek.
