@@ -200,3 +200,43 @@ A beépített Taco ES2 C 15-60/130 szivattyú forgókapcsolója **CI állásban 
 A Bosch 6720871226 (2023/06) kézikönyv 40. oldala, 14. táblázata alapján a CI az **állandó nyomáskülönbségű (Δp-c) I-es jelleggörbe**; a jelölés jelentése **Ellenőrzött** gyártói forrásból. Ez nem igazolja önmagában a tényleges térfogatáramot, munkapontot, a beállítás megfelelőségét vagy a körök lezárása melletti üzembiztonságot. LED-szín külön ellenőrzése nem szükséges a már megerősített kapcsolóállás azonosításához.
 
 Nem történt általunk kezdeményezett beállításmódosítás vagy működési próba. Ez a bejegyzés a bizonyítottságot pontosítja; a PF-01.02 feladat státuszát nem változtatja meg.
+
+
+## Home Assistant előzmények – CI kiinduló értékelése, 2026-10-30
+
+**Forrás és elérés:** Home Assistant MCP, recorder history, közvetlen olvasási lekérdezés. **Időablak:** 2026-10-28 23:08:49 – 2026-10-30 23:08:49, Europe/Budapest (UTC: 2026-10-28T22:08:48.997750Z – 2026-10-30T22:08:48.997750Z). **Ellenőrzés:** 2026-10-30, Europe/Budapest.
+
+Lekért entitások:
+- sensor.gepeszet_padlofutes_homero_padlofutes_eloremeno_homerseklet – 1955 rekord;
+- sensor.gepeszet_padlofutes_homero_padlofutes_visszatero_homerseklet – 772 rekord;
+- sensor.nappali_termosztat_futes – 42 rekord;
+- sensor.haztartasi_termosztat_futes – 18 rekord;
+- climate.nappali_termosztat – 116 rekord, attribútumokkal;
+- climate.haztartasi_termosztat – 112 rekord, attribútumokkal.
+
+Mindegyik lekérdezés teljes: has_more=false; az előremenő második lapja is lekérve, azonos rögzített időablakkal. A hőmérséklet- és százalékszenzorok minimal_response=true, significant_changes_only alapértelmezett; a climate-adatok minimal_response=false, significant_changes_only=false. A hőmérsékletsorokban nincs unknown/unavailable; a két Tado-hőigénysorban 3-3 rövid unknown átmenet volt. A nyers rekorddarabszám nem szabályos mintavételi gyakoriság.
+
+### Módszer
+
+ΔT = előremenő − visszatérő. Egyperces közös időrácson az utolsó ismert recorder-állapot továbbvitelével párosítottuk a sorokat; az eredmények így közelítő, időarányos leíró értékek. Hőigényesnek azt a mintát tekintettük, amelynél valamelyik elérhető Tado Fűtés százalékszenzor >0. Ez nem a kazán reléállapota és nem bizonyít folyamatos fűtőteljesítményt. Az unknown állapotokat nem értelmezzük igazolt nulla hőigényként; a kiemelt délutáni szakaszokban nem volt ilyen átmenet.
+
+### Megfigyelések
+
+| Időszak / mennyiség | Eredmény | Bizonyítottság |
+|---|---|---|
+| Teljes 48 óra előremenő | 22,3–30,2 °C | **Ellenőrzött**, recorder-adatok |
+| Teljes 48 óra visszatérő | 20,5–28,6 °C | **Ellenőrzött**, recorder-adatok |
+| Október 29., kb. 14:47–17:53, Tado-hőigényes szakasz | ΔT medián kb. 2,7 °C; előremenő medián kb. 28,6 °C | **Részben ellenőrzött**, párosított adatokból számítva |
+| Október 30., kb. 14:34–18:15, Tado-hőigényes szakasz | ΔT medián kb. 2,8 °C; előremenő medián kb. 29,2 °C | **Részben ellenőrzött**, párosított adatokból számítva |
+| Tado-hőigény >0 és előremenő ≥28 °C minták, október 29–30. | Mindkét napon ΔT medián kb. 3,1 °C; a két napi 10–90. percentilis együtt kb. 2,0–3,7 °C tartományt fed le | **Részben ellenőrzött**, elemzési szűrés, nem előírt céltartomány |
+| Teljes időablak párosított ΔT | kb. −0,1…3,9 °C; a fűtés nélküli és átmeneti időszakokat is tartalmazza | **Részben ellenőrzött**, számított; a kis negatív eltérés nem önmagában áramlási hiba |
+
+A kiolvasáskor (hőmérők utolsó jelentése kb. 23:04) 24,2 °C előremenő, 22,8 °C visszatérő volt. A Tado utolsó, 22:44 körüli frissítése mindkét helyiségnél idle és 0% hőigény állapotot jelzett; a nappali 23,9 °C / 23 °C célértéket, a fürdő 24,5 °C / 19 °C célértéket mutatott. Eltérő frissítési idejű pillanatfelvételek; nem egyidejű közvetlen mérés.
+
+### Értelmezés és korlát
+
+**Előzetes következtetés – Részben ellenőrzött:** a vizsgált adatok alapján nincs elegendő indok pusztán szivattyúelégtelenségre hivatkozva CII-re váltani. A CI optimális voltát, a kazánvédelem megfelelőségét és a körönkénti elegendő térfogatáramot a két csőhőmérséklet nem bizonyítja. Az adatokból nem azonosítható biztosan a kazán tényleges ki-be kapcsolási gyakorisága sem.
+
+A szivattyú CI állását a felhasználó a vizsgálat előtt megerősítette, de nincs olyan automatikus napló, amely bizonyítaná, hogy a teljes 48 órában változatlanul CI álláson működött. A korábbi 20,72 l/min összesített leolvasás nem egyidejű ezzel a méréssel, ezért ebből nem számítottunk igazolt hőteljesítményt. Az érzékelők csőre rögzítése, eltérő hőkontaktusa és késése korlátozza a ΔT értelmezését. A rövid, ismétlődő hőmérsékletváltozások okát nem tulajdonítjuk bizonyíték nélkül a szivattyúnak.
+
+További értékeléshez releváns a tényleges kazán-/szivattyúállapot vagy villamos teljesítmény, egyidejű körátfolyások és helyiségenkénti komfort. A jelenlegi elemzéshez nem kérünk újra korábban már megosztott fotókat, és nem végzünk körzárást vagy beállításpróbát. Élő rendszerbe írás, automatizmus- vagy konfigurációmódosítás nem történt. A feladat státusza nem változott.
