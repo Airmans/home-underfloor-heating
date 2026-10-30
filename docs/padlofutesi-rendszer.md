@@ -1,7 +1,7 @@
 # Padlófűtés – meglévő hidraulikai rendszer és körök
 
 **Dokumentumállapot:** folyamatban lévő helyszíni felmérés.  
-**Utolsó frissítés:** 2026-10-28, Europe/Budapest.  
+**Utolsó frissítés:** 2026-10-30, Europe/Budapest.  
 **Bizonyítottság:** az alábbi megállapításoknál külön jelölve.
 
 ## Cél és hatókör
@@ -149,3 +149,23 @@ A felhasználó által jelzett nyitott légterek:
 A felhasználó szerint a 2. és 3. kör helyiségei korábban 4–5 °C-kal hűvösebbek voltak a többi helyiségnél; a 7. kört a háló–gardrób–dolgozó blokk túlmelegedése miatt zárta le. A 4. és 5. kör a felhasználó szerint egyaránt fűti a konyhát. Ezek felhasználói tapasztalatok és közlések, nem egyidejű, naplózott helyiséghőmérséklet-mérések.
 
 **Forrás és ellenőrzés dátuma:** felhasználói fényképek, alaprajzok és leírás, 2026-10-28, Europe/Budapest. A négy tervfájl GitHubon való jelenlétét a felhasználó 2026-10-28-i képernyőképe alátámasztja.
+
+
+## Fotókkal kiegészített szivattyú- és hidraulikai leltár — 2026-10-30
+
+**Ellenőrzés:** 2026-10-30, Europe/Budapest. **Forrás:** a felhasználó most megosztott kazánbelső-, szivattyúelőlap- és adattábla-fotói; az eredeti forrásjegyzék a [kazánvezérlési dokumentumban](kazan-es-kazanoldali-vezerles.md#forrásjegyzék--20261030-i-feltöltések) található.
+
+| Adat | Megállapítás | Bizonyítottság |
+|---|---|---|
+| Beépített keringető típusa | Taco Italia Srl / Taco Comfort Solutions **ES2 C 15-60/130**; ES2 INVERTER TECH előlap | **Ellenőrzött**, adattábla és előlap |
+| Tápellátás | 230 V, 50 Hz | **Ellenőrzött**, adattábla |
+| Felvett teljesítmény P1 | minimum 3 W, maximum 42 W | **Ellenőrzött**, adattábla; nem pillanatnyi fogyasztásmérés |
+| Áramfelvétel | minimum 0,03 A, maximum 0,33 A | **Ellenőrzött**, adattábla |
+| Jelölések | IP44; TF95; 0,6 MPa; EEI ≤ 0,21 – Part 2; THI003 | **Ellenőrzött**, adattábla; a 0,6 MPa nem a kazán engedélyezett nyomásának adata |
+| Forgókapcsoló helyzete | A fehér nyíl a C tartomány I-es jelölése közelében, a P tartomány 2-es jelölése melletti határnál látható | **Részben ellenőrzött**; a pontos üzemmód és beállítás a megfelelő gyártói útmutatóval még összevetendő |
+| Bypass | A korábbi PF-01.02 feljegyzés szerint nincs bypass. Az új fotók bemutatott részein külön bypasság nem azonosítható egyértelműen; ez nem igazolja a teljes rendszerben való hiányát | Korábbi állítás: **Korábbi forrásból átvett**; vizuális megerősítés: **Részben ellenőrzött** |
+| Keverőkör | A bemutatott kazánbelsőben külön keverőszelep nem azonosítható; a kazánon kívüli teljes rendszer kialakítása ebből nem bizonyítható | **Részben ellenőrzött** |
+
+A pontos szivattyútípushoz és a kazánoldali termosztátbekötéshez a szükséges képek megérkeztek; ezeket nem kell ismételten bekérni. A szivattyú beállításának értelmezése, a bypass/keverőkör teljes rendszerre vonatkozó igazolása és a korábban rögzített működtető-kompatibilitási kérdés nyitott marad. Az osztó pontos altípusát a korábbi döntésnek megfelelően nem emeljük vissza önálló lezárási feltétellé.
+
+A fotókon működő kijelző és panelvilágítás látható; a fotók nem bizonyítják a feszültségmentességet. Az asszisztens csak a megosztott bizonyítékokat értékelte, nem végzett és nem kezdeményezett élő próbát, szerelést vagy beállításmódosítást.
