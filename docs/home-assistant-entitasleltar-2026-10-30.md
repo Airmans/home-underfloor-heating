@@ -41,3 +41,14 @@ A „05 Ellenőrzendők” munkalap 1059 ellenőrzendő egyedi entitást sorol f
 A teljes leltár nem egyenlő a PF-01.05 fűtési szempontból releváns szenzorainak lezárt megfeleltetésével. A releváns érzékelők és a hiányzó/átnevezett entitások célzott vizsgálata a PF-01.05 feladatban folytatandó. A HCA dokumentációt nem másoljuk át.
 
 **Módosítások határa:** csak Google Drive-nyilvántartás és dokumentáció módosult; Home Assistant-konfiguráció, automatizmus és fűtési rendszer nem.
+
+
+## Home Assistant MCP – közvetlen lekérdezési lehetőség
+
+**Kapcsolat állapota:** elérhető, 2026-10-30-án (Europe/Budapest) élő, olvasási célú lekérdezéssel ellenőrizve. A `sensor.gepeszet_padlofutes_homero_padlofutes_eloremeno_homerseklet` entitás `23.8` értéket adott vissza, `2026-10-30T23:33:04.947384+01:00` utolsó frissítési időbélyeggel. Ez pillanatfelvétel, nem a hőmérséklet vagy a kapcsolat állandó állapotának igazolása.
+
+**Bizonyítottság:** Ellenőrzött – az MCP-kapcsolat és az adott entitás lekérdezhetősége; a teljes MCP-funkciókészlet és a tartós rendelkezésre állás nem ellenőrzött.
+
+**Munkafolyamat:** a PF-01.05 és kapcsolódó felmérések során a HA MCP segítségével célzottan olvashatók az entitások, állapotok és – ahol a megfelelő eszköz támogatja – a korábbi mérések. Az adatok forrását, időbélyegét és bizonyítottságát rögzíteni kell. A meglévő Sheets-leltár továbbra is dokumentációs forrás, nem helyettesíti az élő HA-állapotot.
+
+**Biztonsági határ:** a projektben alapértelmezett a kizárólag olvasási üzem. MCP-n keresztül sem szabad konfigurációt vagy működő rendszert módosítani külön, konkrét felhasználói jóváhagyás nélkül. Hozzáférési tokent, titkot vagy belső kapcsolatcímet nem rögzítünk.
