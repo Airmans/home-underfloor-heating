@@ -189,3 +189,14 @@ A fotókon működő kijelző és panelvilágítás látható; a fotók nem bizo
 A 36. ábra szivattyú-jelleggörbét mutat a 4–24 kW kazánokhoz; a 38. ábra a 15–24 kW kazán hidraulikai ellenállását adja meg, ezért a 18 kW-os kazánhoz ez utóbbi a releváns ellenállásgörbe. Ezek gyártói görbék, nem helyszíni munkapontmérések. A diagramokból önmagukban nem következik a tényleges térfogatáram, a CI beállítás megfelelősége vagy a lezárt körök melletti biztonságos üzem.
 
 A gyártói figyelmeztetés szerint a helytelen szivattyúbeállítás a hőcserélő túlmelegedését okozhatja. Beállításmódosítás nem történt és ebből a dokumentálásból nem következik ilyen jóváhagyás. A bypass/keverőkör teljes rendszerre vonatkozó bizonyítottsága és a működtető-kompatibilitás korábbi nyitott pontjai változatlanok. PF-01.02 státuszváltoztatás nem történt.
+
+
+## Helyszíni megerősítés — CI kapcsolóállás, 2026-10-30
+
+**Forrás:** a felhasználó közvetlen helyszíni megerősítése: „CI álláson van a szivattyú”. **Ellenőrzés/rögzítés:** 2026-10-30, Europe/Budapest.
+
+A beépített Taco ES2 C 15-60/130 szivattyú forgókapcsolója **CI állásban van**. A kapcsolóállás **Ellenőrzött — felhasználói helyszíni megerősítés és a korábbi fotó együttesével**, nem az asszisztens független helyszíni vizsgálatával. A korábbi, pusztán fotóleolvasásból eredő bizonytalanság erre a kapcsolóállásra megszűnt.
+
+A Bosch 6720871226 (2023/06) kézikönyv 40. oldala, 14. táblázata alapján a CI az **állandó nyomáskülönbségű (Δp-c) I-es jelleggörbe**; a jelölés jelentése **Ellenőrzött** gyártói forrásból. Ez nem igazolja önmagában a tényleges térfogatáramot, munkapontot, a beállítás megfelelőségét vagy a körök lezárása melletti üzembiztonságot. LED-szín külön ellenőrzése nem szükséges a már megerősített kapcsolóállás azonosításához.
+
+Nem történt általunk kezdeményezett beállításmódosítás vagy működési próba. Ez a bejegyzés a bizonyítottságot pontosítja; a PF-01.02 feladat státuszát nem változtatja meg.
