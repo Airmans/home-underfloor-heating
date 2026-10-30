@@ -104,3 +104,56 @@ A paraméterek funkcióját és azt, hogy az adott vezérlési módhoz megfelel�
 **Bizonyítottság:** **Felhasználói közlés; a szervizmenü értékei nem hozzáférhetők a felhasználó számára.**
 
 A felhasználó tájékoztatása szerint az SE paraméterek alapértelmezettek, és azokhoz nem fér hozzá. Emiatt az SE07 egyedi aktuális értékét nem tekintjük leolvasott vagy ellenőrzött adatnak. Az alapértelmezett érték pontos számszerű értékét és funkcióját a gyártói dokumentáció vagy jogosult szerviz tudja megerősíteni. A felmérés nem próbálja megkerülni a hozzáférési korlátozást, és nem javasol jogosulatlan paramétermódosítást.
+
+
+## Fizikai termosztátbekötés és kapcsolási rajz — 2026-10-30
+
+**Ellenőrzés:** 2026-10-30, Europe/Budapest. **Forrás:** a most feltöltött kazán- és termosztátfotók, a felhasználó vezetékazonosítása és a megosztott Bosch kapcsolási rajz.
+
+| Adat | Megállapítás | Bizonyítottság |
+|---|---|---|
+| Kazánoldali kapocspár | **B5–B6**; a felhasználó a világoskék–barna érpárt azonosította termosztátvezetékként | **Ellenőrzött** a fotók, kapocsjelölések és felhasználói azonosítás együttesével |
+| Termosztátoldali bekötés | Tado fali alaplap: **barna → NO**, **világoskék → COM**; NC, parkoló- és digitális kapcsok a képen üresek | **Ellenőrzött**, 7690.jpg |
+| Kapcsolási rajz | 21. ábra: Tronic Heat 3500 (15–24 kW), 3×400/230 V AC; PT = szobatermosztát, kapcsolóérintkező B5 és B6 között; látható rajzazonosító 0010010251-002 | **Ellenőrzött** a megosztott rajzkivágás tartalmára; a teljes kiadás és készülékrevízió egyezése külön nincs igazolva |
+| Azonosított kapcsolási út | Tado NO–COM ↔ kazán B5–B6, relés ON/OFF igénykapcsolat | **Ellenőrzött** a hozzáférhető végpontok és a felhasználó kábelazonosítása alapján; nem folytonosságmérés vagy teljes rejtett kábelút-ellenőrzés |
+| Bemenet villamos előírásai | A pontos termosztátköri feszültség, áram és megengedett külső illesztés nem szerepel egyértelműen a megosztott ábrán | **Ellenőrizetlen**; a rajz 24 V DC tápegységjelölése önmagában nem elegendő ezek megadásához |
+
+A vezeték színéből nem következtetünk a kapocs villamos funkciójára. A relés bekötés nem jelent digitális buszos kazánvezérlést. A rejtett kábelút és esetleges köztes elem hiányát nem állítjuk függetlenül ellenőrzöttnek.
+
+### Termosztátok és már rögzített működés
+
+- **Nappali & Konyha:** Tado Smart Thermostat **RU02**, **DRU02-TA-14**; a hátlap típuskódja **Ellenőrzött** (7691.jpg). A V3+ megnevezés a korábbi felhasználói azonosításból származik.
+- **Fürdőszoba / háztartási helyiség átjáró:** **Hager EK960, Typ RU01**, ZR0516 jelöléssel; a típustábla és a 3 AAA elem **Ellenőrzött** (7692.jpg). Nem történt eszközcsere: az eredeti fürdőszobai készülék Hager volt; a korábbi általános „fürdőszobai Tado” megnevezés ezt az eszközt jelentette.
+- A Hager vezeték nélküli hőmérséklet-érzékelőként való használata a Tado-rendszerben, valamint mindkét készülék 3 AAA elemes táplálása a [PF-01.04 korábbi feljegyzéseiből](https://app.notion.com/p/4063e49c5f5f81cf9cc6fad61f53adf6) származik (2026-10-28 23:29–23:39, Europe/Budapest; **Korábbi forrásból átvett**). A Hager elemei a mostani fotón is látszanak; a Tado aktuális elemei ezen a hátlapképen nem láthatók.
+- Mindkét helyiségnek saját időprogramja és célhőmérséklete van; bármelyik igénye kezdeményezhet fűtést. A kazánt közvetlenül a nappali Tado kapcsolja; a Hager igénye a Tado-rendszeren belül közvetetten jut el ehhez a vezérlőhöz. Ez már korábban megadott működési leírás (**Korábbi forrásból átvett**), nem újra bekérendő adat. A teljes rádiós/felhős jelút és az alkalmazás eszközszerep-konfigurációja nem lett élő teszttel ellenőrizve.
+- A Hager és egy konkrét Tado V3/V3+ készülék teljes hardverazonossága nem bizonyított pusztán a hátlap és az alkalmazás alapján.
+
+### A korábbi bejegyzések értelmezése és megmaradó kérdések
+
+Ez a dátumozott kiegészítés pontosítja a korábbi „kapcsok ismeretlenek”, „fizikai bekötés nem látható”, illetve általános „fürdőszobai Tado” megfogalmazásokat. A régi állapotok forrásként megmaradnak, de nem aktuális hiányok: B5–B6, NO–COM, RU02 és Hager EK960/RU01 most azonosítottak. A bemenet teljes villamos specifikációja, a rejtett kábelút, a szivattyú beállításának értelmezése, a bypass/keverőkör teljes körű igazolása és a korábbi tervezési követelmények továbbra is elkülönített nyitott pontok.
+
+A képek és adatok rögzítése nem változtat feladatstátuszt és nem jelent megvalósítási jóváhagyást. Nem történt az asszisztens által végzett működési próba, vezetékezés-, kazán-, termosztát- vagy Home Assistant-módosítás.
+
+
+### Forrásjegyzék – 2026.10.30-i feltöltések
+
+A dátum a megosztás és az ellenőrzés napja (Europe/Budapest); a készítési idő külön nem ellenőrzött. Az eredeti képek nem kerültek a GitHubra. A hátlapfotók hitelesítési kódjait és QR-kódjait nem másoljuk a műszaki dokumentációba.
+
+| Forrás | Tartalom |
+|---|---|
+| [image(20261030-184017).png](https://chatgpt.com/library?file_id=libfile_88c2556c2f488191b450a186498a3598&account_id=personal) | Kazán belső áttekintés |
+| [image(20261030-184019).png](https://chatgpt.com/library?file_id=libfile_b8fe2f619aa081919dcb15ef5c67baf8&account_id=personal) | Kazán alsó belső része |
+| [image(20261030-184025).png](https://chatgpt.com/library?file_id=libfile_1361565658dc81919c316f0562436f6d&account_id=personal) | Vezérlőcsatlakozók |
+| [image(20261030-184029).png](https://chatgpt.com/library?file_id=libfile_a014fd06cabc819196d811e44b19d8f1&account_id=personal) | Vezérlőcsatlakozók |
+| [image(20261030-184032).png](https://chatgpt.com/library?file_id=libfile_3cd78c8f0b108191a854405bf6d5d24d&account_id=personal) | Vezérlőcsatlakozók |
+| [image(20261030-184035).png](https://chatgpt.com/library?file_id=libfile_c5e0f450985c8191aa4e4a0a281f8ba6&account_id=personal) | Szivattyú előlap |
+| [image(20261030-184043).png](https://chatgpt.com/library?file_id=libfile_90e34e7a8bbc8191ae32150ea17571f6&account_id=personal) | A oldali csatlakozó |
+| [image(20261030-184205).png](https://chatgpt.com/library?file_id=libfile_adb570d45cec8191bf325a8d3e9d1b1c&account_id=personal) | Szivattyú forgókapcsoló közeli kép |
+| [image(20261030-194138).png](https://chatgpt.com/library?file_id=libfile_03eae27bf59c8191af4c26507badb7b4&account_id=personal) | Szivattyú adattábla |
+| [image(20261030-194153).png](https://chatgpt.com/library?file_id=libfile_1cf0c14235d4819196b6428d9710fc52&account_id=personal) | B kapocssor jelölései |
+| [image(20261030-194211).png](https://chatgpt.com/library?file_id=libfile_d5fa4807bad881918b195d21acb976c5&account_id=personal) | B5–B6 közeli nézet |
+| [image(20261030-194223).png](https://chatgpt.com/library?file_id=libfile_5b5045355df081919fa4a0c967b255c2&account_id=personal) | Termosztátkábel kazánoldalon |
+| [image(20261030-194600).png](https://chatgpt.com/library?file_id=libfile_a1ae9685caf881918a95a2c74e7efdab&account_id=personal) | Bosch kapcsolási rajz, 21. ábra |
+| [7692.jpg](https://chatgpt.com/library?file_id=libfile_173a85100e5c8191b32dcf27154cd457&account_id=personal) | Hager EK960 hátoldal |
+| [7691.jpg](https://chatgpt.com/library?file_id=libfile_d5ac37b79f68819196c4a043b1409395&account_id=personal) | Tado RU02 hátoldal |
+| [7690.jpg](https://chatgpt.com/library?file_id=libfile_2fd66ac668748191bc4556dd93a0b406&account_id=personal) | Tado fali alaplap és NO–COM bekötés |
