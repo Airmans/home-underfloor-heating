@@ -169,3 +169,23 @@ A felhasználó szerint a 2. és 3. kör helyiségei korábban 4–5 °C-kal hű
 A pontos szivattyútípushoz és a kazánoldali termosztátbekötéshez a szükséges képek megérkeztek; ezeket nem kell ismételten bekérni. A szivattyú beállításának értelmezése, a bypass/keverőkör teljes rendszerre vonatkozó igazolása és a korábban rögzített működtető-kompatibilitási kérdés nyitott marad. Az osztó pontos altípusát a korábbi döntésnek megfelelően nem emeljük vissza önálló lezárási feltétellé.
 
 A fotókon működő kijelző és panelvilágítás látható; a fotók nem bizonyítják a feszültségmentességet. Az asszisztens csak a megosztott bizonyítékokat értékelte, nem végzett és nem kezdeményezett élő próbát, szerelést vagy beállításmódosítást.
+
+
+## Bosch-kézikönyv: szivattyúüzemmódok és fotóegyeztetés — 2026-10-30
+
+**Forrás:** [feltöltött Bosch-kézikönyvoldal](https://chatgpt.com/library?file_id=libfile_acc9e18402488191b66e60c38a902982&account_id=personal), nyomtatott 40. oldal; Tronic Heat 3500, 6720871226 (2023/06), 9.1 szakasz, 36–38. ábra, 14–15. táblázat. Összevetett helyszíni kép: [szivattyú forgókapcsolója](https://chatgpt.com/library?file_id=libfile_adb570d45cec8191bf325a8d3e9d1b1c&account_id=personal). **Ellenőrzés:** 2026-10-30, Europe/Budapest.
+
+| Jelölés | Gyártói jelentés | Bizonyítottság |
+|---|---|---|
+| P1, P2 | Változó nyomáskülönbség-görbék, Δp-v | **Ellenőrzött**, 14–15. táblázat |
+| CI, CII | Állandó nyomáskülönbség-görbék, Δp-c | **Ellenőrzött**, 14–15. táblázat |
+| min…max | Meghatározott sebességű üzemmód | **Ellenőrzött**, 14. táblázat |
+| LED zöld / narancssárga / kék | P / C / min…max üzemmód | **Ellenőrzött**, 15. táblázat |
+| LED fehéren villog | Levegő jelenlétének automatikus felismerése | **Ellenőrzött**, 15. táblázat |
+| LED piros | Rendeltetésszerű üzemet akadályozó zavar; például blokkolt rotor, elégtelen tápfeszültség, elektromos zavar | **Ellenőrzött**, 15. táblázat |
+
+**Helyszíni állás:** a korábbi közeli fotó fehér nyila a **CI jelölés környezetébe mutat**. A gyártói ábrával összevetve ez **CI, állandó nyomáskülönbségű beállításnak látszik** (**Részben ellenőrzött**, fotóleolvasás). A korábbi „C/P határ közelében” leírás helyett ez a pontosabb értelmezés alkalmazandó. A jelölések jelentése immár tisztázott; az aktuális üzemmód LED-színnel vagy helyszíni leolvasással nem lett külön megerősítve. A fotón a LED színe nem olvasható megbízhatóan; új működési tesztet nem végeztünk.
+
+A 36. ábra szivattyú-jelleggörbét mutat a 4–24 kW kazánokhoz; a 38. ábra a 15–24 kW kazán hidraulikai ellenállását adja meg, ezért a 18 kW-os kazánhoz ez utóbbi a releváns ellenállásgörbe. Ezek gyártói görbék, nem helyszíni munkapontmérések. A diagramokból önmagukban nem következik a tényleges térfogatáram, a CI beállítás megfelelősége vagy a lezárt körök melletti biztonságos üzem.
+
+A gyártói figyelmeztetés szerint a helytelen szivattyúbeállítás a hőcserélő túlmelegedését okozhatja. Beállításmódosítás nem történt és ebből a dokumentálásból nem következik ilyen jóváhagyás. A bypass/keverőkör teljes rendszerre vonatkozó bizonyítottsága és a működtető-kompatibilitás korábbi nyitott pontjai változatlanok. PF-01.02 státuszváltoztatás nem történt.
