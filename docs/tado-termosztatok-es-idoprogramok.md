@@ -200,3 +200,18 @@ A 11 oldalas fájlban a tado° Wireless Smart Thermostat V3+ nemzetközi szerel�
 A PDF 5. oldalán (4. lépés) a COM–NO relékapcsolat potenciálmentes és 230 V-os alkalmazását külön ábra mutatja; az alapértelmezett relékonfiguráció R01. **Ellenőrzött** kizárólag az útmutatóban tárgyalt vevőre; a helyszíni RU02 konfigurációjának R01 értéke ebből nem állapítható meg.
 
 A relés kapcsolási elv összhangban van a már fotózott NO–COM bekötéssel (**Részben ellenőrzött**, összevetés). A PDF nem igazolja a Bosch B5–B6 teljes villamos specifikációját, a Hager EK960–Tado hardverazonosságot, a meglévő zónakonfigurációt vagy a szivattyú üzemmódját. Nem történt konfigurációmódosítás vagy működési teszt.
+
+
+## Vezetékes Tado szerelői útmutató — 2026-10-30
+
+**Forrás:** [tado° Starter Kit – Wired Smart Thermostat V3+, English International, Manual version 3.2, dokumentum 104210 V3](https://cdn.brandfolder.io/607DGEMS/as/7k4rssnm8hbmr6mjf94qmck/104210-DIGITAL-ST01IB01-INSTALLER_MANUAL-TA-EN-00-V3.pdf). **Ellenőrzés:** 2026-10-30, Europe/Budapest. A felhasználó által megadott eredeti PDF letöltve és szövegként, valamint a 4. oldal renderelt ábráján ellenőrizve; 8 oldal. A fájlnév V3 jelölése dokumentumjelölés, nem a felhasználó készülékgenerációjának önálló bizonyítéka.
+
+### Megállapítás és alkalmazhatóság
+
+- A 4. PDF-oldal (4. lépés) a **vezetékes Smart Thermostat** NO–NC–COM / P1–P3 / A–−–+ kapocskiosztását mutatja. Ez a lefotózott nappali Tado alaplap kapocskiosztásával egyezik (**Ellenőrzött**, dokumentum és fotó összevetése); a dokumentum nem nevezi meg külön az RU02/DRU02-TA-14 kódot.
+- A **COM–NO** a relés kapcsolás két használt kapcsa; az útmutató külön potenciálmentes és 230 V-os relés alkalmazást ismertet. Relés konfigurációazonosító: **R01**; gyári alapmód: Relay (**Ellenőrzött**, gyártói útmutató). A helyszíni menü tényleges értékét nem olvastuk le, ezért az aktuális R01 beállítást nem minősítjük ellenőrzöttnek.
+- A fotón barna → NO és világoskék → COM csatlakozik. A felhasználó által azonosított érpár a kazán B5–B6 kapcsára vezet; a Bosch-rajz itt PT szobatermosztát-érintkezőt mutat. A relés ON/OFF kapcsolási elvhez így már a vezetékes termosztát gyártói útmutatója is rendelkezésre áll; új bekötési fotó nem szükséges.
+- A dokumentum 5–6. oldala más, digitális és analóg interfészeket is felsorol. A Bosch név ottani előfordulása **nem bizonyítja**, hogy a konkrét Tronic Heat 3500 ezeket támogatja; a lefotózott bekötés relés.
+- Ez az útmutató az előző Wireless Receiver kézikönyvnél közvetlenebb forrás a nappali termosztát bekötési elvéhez. Nem igazolja a Hager EK960 teljes hardverazonosságát vagy a teljes Tado-zónakonfigurációt. A B5–B6 kör pontos villamos specifikációját továbbra is a megfelelő Bosch előírásból kell azonosítani.
+
+A kézikönyv konfigurációs és működési tesztlépéseit nem hajtottuk végre. Ez kizárólag dokumentációs ellenőrzés, nem beállításmódosítás vagy rendszerpróba.
