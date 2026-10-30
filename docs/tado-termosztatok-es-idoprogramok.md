@@ -189,3 +189,14 @@ Ez a dokumentum konfigurációs adatok dokumentálása. Nem történt termosztá
 - A helyiségeknek saját időprogramjuk és célértékük van; bármelyik igénye kezdeményezheti a kazán fűtését. Közvetlen kazánkapcsoló a nappali Tado; a Hager igénye közvetetten, a Tado-rendszeren át érvényesül (**Korábbi forrásból átvett**). Ez a már dokumentált működés nem új nyitott kérdés, élő teszt nem történt.
 
 A bekötés részletei és az összes mostani fénykép név szerinti, eredeti elérhetőséget megőrző forrásjegyzéke: [Kazán és kazánoldali fűtésvezérlés](kazan-es-kazanoldali-vezerles.md). A hátlapok hitelesítési kódjait és QR-kódjait nem másoljuk a dokumentációba. Nem történt beállításmódosítás vagy működési teszt.
+
+
+## Kiegészítő Tado-útmutató — 2026-10-30
+
+**Forrás:** [a felhasználó által megadott PDF](https://m.media-amazon.com/images/I/A1UoSRX8RDL.pdf). **Ellenőrzés:** 2026-10-30, Europe/Budapest.
+
+A 11 oldalas fájlban a tado° Wireless Smart Thermostat V3+ nemzetközi szerelői útmutatója (3.2 változat), továbbá radiátortermosztát-útmutató található. A fő útmutató Wireless Receiver és Wireless Temperature Sensor készülékekre vonatkozik, nem közvetlenül a lefotózott RU02 vezetékes termosztátra.
+
+A PDF 5. oldalán (4. lépés) a COM–NO relékapcsolat potenciálmentes és 230 V-os alkalmazását külön ábra mutatja; az alapértelmezett relékonfiguráció R01. **Ellenőrzött** kizárólag az útmutatóban tárgyalt vevőre; a helyszíni RU02 konfigurációjának R01 értéke ebből nem állapítható meg.
+
+A relés kapcsolási elv összhangban van a már fotózott NO–COM bekötéssel (**Részben ellenőrzött**, összevetés). A PDF nem igazolja a Bosch B5–B6 teljes villamos specifikációját, a Hager EK960–Tado hardverazonosságot, a meglévő zónakonfigurációt vagy a szivattyú üzemmódját. Nem történt konfigurációmódosítás vagy működési teszt.
