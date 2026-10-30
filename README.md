@@ -88,6 +88,23 @@ A fájlnevek és a dokumentumjegyzék a PF-00 jóváhagyása után, a tényleges
 
 A 38 eredeti munkalap 3407 forrássorából 3401 egyedi entitás került az aktív leltárba. A forrásegyezőség, a hat többforrású entitás és a fennmaradó kérdések a [jegyzőkönyvben](docs/home-assistant-entitasleltar-2026-10-30.md) találhatók. A fűtési szempontból releváns HA-érzékelők célzott felmérése még nyitott.
 
+
+## Notion részfeladatok
+
+A státuszok, lezárási feltételek és jóváhagyások elsődleges forrása a Notion. A dokumentum megléte önmagában nem jelent feladatlezárást.
+
+| Feladat | Hivatkozás |
+| --- | --- |
+| PF-01.01 – Hőtermelő és vezérlőbemenetek | [Notion](https://app.notion.com/p/4063e49c5f5f815682abe1a0005b0f68) |
+| PF-01.02 – Osztó-gyűjtő és hidraulika | [Notion](https://app.notion.com/p/4063e49c5f5f8193b5dcd0b0c052202e) |
+| PF-01.03 – Körök és helyiségek megfeleltetése | [Notion](https://app.notion.com/p/4063e49c5f5f81b48c0be7003286c98f) |
+| PF-01.04 – Termosztátok és szabályozás | [Notion](https://app.notion.com/p/4063e49c5f5f81cf9cc6fad61f53adf6) |
+| PF-01.05 – Helyiségi érzékelők és HA-adatok | [Notion](https://app.notion.com/p/4063e49c5f5f813d851dfdf77eccbdf1) |
+| PF-01.08 – Hőszivattyús átállás követelményei | [Notion](https://app.notion.com/p/4063e49c5f5f813aaaa9d9f63162f99c) |
+| PF-01.09 – Hiánylista és kockázati jegyzék | [Notion](https://app.notion.com/p/4063e49c5f5f8128aacce002ff9da016) |
+| PF-02.01 – Körönkénti szabályozás hardverigénye | [Notion](https://app.notion.com/p/4063e49c5f5f81909326ce080a4391f5) |
+| PF-02.02 – Home Assistant-integráció és logika | [Notion](https://app.notion.com/p/4063e49c5f5f81888137e6a329ed4713) |
+
 ## Dátumok és változáskövetés
 
 A projekt dokumentációjában a dátumokat és időbélyegeket **Europe/Budapest** időzóna szerint kell rögzíteni. A dokumentumokban különüljön el a felmérés dátuma, a dokumentum létrehozásának vagy módosításának dátuma és az adat forrásának dátuma, ha ezek eltérnek.
