@@ -7,7 +7,7 @@
 ## Eszközök és elhelyezés
 
 - **Nappali & Konyha:** Tado Smart Thermostat; megjelenített azonosító: `RU2734702592`; firmware `215.2`. A felhasználó megerősítése szerint V3+. Elhelyezés: az előszoba és a nappali-konyha közötti átjáró.
-- **Fürdőszoba:** Tado Smart Thermostat; megjelenített azonosító: `RU1602FT01050584057344`; firmware `54.20`. V3 vagy V3+ generációja **Ellenőrizetlen**; a készülék hátoldali modellkódja szükséges az azonosításhoz. Elhelyezés: a fürdőszoba és a mosókonyha/gépészeti helyiség közötti átjáró.
+- **Fürdőszoba:** Hager EK960, Typ RU01; a Tado alkalmazásban Smart Thermostat néven szerepel, megjelenített azonosító: `RU1602FT01050584057344`; firmware `54.20` a korábbi képernyőkép szerint. A Hager EK960/RU01 típus a 2026-10-30-i hátlapfotó alapján **Ellenőrzött**; a teljes V3/V3+ hardverazonosság nincs külön igazolva. Elhelyezés: a fürdőszoba és a mosókonyha/gépészeti helyiség közötti átjáró. Nem történt csere; a korábbi Tado-megnevezést a 2026-10-28-i Notion-feljegyzés már helyesbítette.
 - Mindkét eszköz képernyőképen látható állapota csatlakoztatott, akkumulátorállapota „Good”, Dazzle Mode bekapcsolva.
 - **Tado Internet Bridge:** firmware `92.1`, a képernyőkép szerint csatlakoztatott.
 - A felhasználó közlése szerint a Home Assistant Tado-integrációja felhőalapú. Az aktuális HA-entitásokat és automatizmusokat itt nem vizsgáltuk.
@@ -170,9 +170,22 @@ A felhasználó 2026-10-27-én bemásolta a sablon kimenetét. Az alábbi lista 
 ## Nyitott kérdések
 
 1. A fürdőszobai termosztát pontos generációja.
-2. A fizikai vezetékezés és a termosztátok fűtési igényének összegzése; lásd a külön kazánvezérlési dokumentumot.
+2. A rejtett kábelút és a teljes Tado jelút független ellenőrzése; a kazánoldali B5–B6, valamint a Tado NO–COM végpontbekötés már fotóval dokumentált. A két helyiség igénylogikája korábban rögzített, nem újra bekérendő adat.
 3. A Tado Home Assistant-integráció aktuális entitásai és a kapcsolódó automatizmusok, ha a jóváhagyott felmérés során relevánssá válnak.
 
 ## Biztonsági korlát
 
 Ez a dokumentum konfigurációs adatok dokumentálása. Nem történt termosztát- vagy Home Assistant-beállítás módosítása, vezetékezési vizsgálat vagy fűtést befolyásoló teszt.
+
+
+## Hátlapfotók és vezérlési kapcsolat pontosítása — 2026-10-30
+
+**Ellenőrzés:** 2026-10-30, Europe/Budapest. Forrás: a most feltöltött 7692.jpg, 7691.jpg, 7690.jpg; a korábbi működési leírás forrása a [PF-01.04 Notion-feladat](https://app.notion.com/p/4063e49c5f5f81cf9cc6fad61f53adf6), 2026-10-28 23:29–23:39, Europe/Budapest.
+
+- Nappali Tado: **RU02, DRU02-TA-14** – **Ellenőrzött**, hátlapfotó; a V3+ változat korábbi felhasználói azonosítás.
+- Fürdőszobai Hager: **EK960, Typ RU01, ZR0516** – **Ellenőrzött**, hátlapfotó; a 3 db AAA elem látható. A Tado 3 AAA táplálása a korábbi felhasználói közlésből származik (**Korábbi forrásból átvett**).
+- Tado fali alaplap: **barna → NO, világoskék → COM**, NC és a digitális/parkoló kapcsok a képen üresek – **Ellenőrzött**. A kazánoldali érpárt a felhasználó azonosította: **B5–B6**; ezt a kazán kapocsfotói és a megosztott rajz PT szobatermosztát-jelölése támasztja alá.
+- A Hager eredetileg is a fürdőszobában volt; nem csere és nem pusztán egy régi/tartalék készülék. A felhasználó szerint a Tado-rendszerben vezeték nélküli érzékelőként használja (**Korábbi forrásból átvett**); az app pontos eszközszerepe és a teljes hardverazonosság nincs függetlenül igazolva.
+- A helyiségeknek saját időprogramjuk és célértékük van; bármelyik igénye kezdeményezheti a kazán fűtését. Közvetlen kazánkapcsoló a nappali Tado; a Hager igénye közvetetten, a Tado-rendszeren át érvényesül (**Korábbi forrásból átvett**). Ez a már dokumentált működés nem új nyitott kérdés, élő teszt nem történt.
+
+A bekötés részletei és az összes mostani fénykép név szerinti, eredeti elérhetőséget megőrző forrásjegyzéke: [Kazán és kazánoldali fűtésvezérlés](kazan-es-kazanoldali-vezerles.md). A hátlapok hitelesítési kódjait és QR-kódjait nem másoljuk a dokumentációba. Nem történt beállításmódosítás vagy működési teszt.
