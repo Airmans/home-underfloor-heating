@@ -43,6 +43,17 @@ A jóváhagyott hatókörig kizárólag előkészítő, dokumentációs és terv
 
 Biztonsági vagy műszaki bizonytalanság esetén a munkát meg kell állítani, a kérdést dokumentálni kell, és döntést kell kérni. Jelszót, tokent, API-kulcsot és más titkot nem szabad a repóban vagy a Notion dokumentációban tárolni.
 
+
+## Home Assistant MCP-kapcsolat
+
+**Ellenőrizve:** 2026-10-30 (Europe/Budapest). A ChatGPT és a Home Assistant közötti MCP-kapcsolat működik: a `sensor.gepeszet_padlofutes_homero_padlofutes_eloremeno_homerseklet` entitás aktuális állapota sikeresen lekérdezhető volt a Home Assistant MCP-eszközén keresztül.
+
+**Bizonyítottság:** Ellenőrzött – sikeres, élő, kizárólag olvasási célú entitáslekérdezés. Ez nem jelenti az összes MCP-művelet, integráció vagy hosszú távú rendelkezésre állás tesztelését.
+
+**Felhasználás:** meglévő entitások, szenzorállapotok, előzmények és konfigurációs adatok célzott, olvasási célú vizsgálata a PF-01 felméréshez. A Home Assistant MCP a projekthez elérhető adatforrás; a korábbi bizonyítékokat nem kell indokolatlanul újra felmérni.
+
+**Korlát:** a kapcsolat technikai képessége nem jelent felhatalmazást beavatkozásra. HA-konfiguráció, automatizmus, relé, szelep, fűtés vagy egyéb élő állapot módosítása csak külön, konkrét felhasználói jóváhagyással lehetséges. Hitelesítő adatokat, tokeneket és privát kapcsolati URL-eket nem tárolunk a GitHubban vagy a Notionban.
+
 ## Kapcsolódás a Home Computer Architecture projekthez
 
 A [Home Computer Architecture repó](https://github.com/Airmans/home-computer-architecture) az otthoni IT-infrastruktúra elsődleges dokumentációs forrása. Ebből a projektből kizárólag a padlófűtéshez ténylegesen szükséges infrastruktúra-adatok vehetők át, az eredeti forrás, dátum és bizonyítottsági szint megőrzésével. A HCA projektben fűtési dokumentációt nem kell tárolni, és a már elvégzett IT-felméréseket nem szabad indokolatlanul megismételni.
