@@ -240,3 +240,15 @@ A kiolvasáskor (hőmérők utolsó jelentése kb. 23:04) 24,2 °C előremenő, 
 A szivattyú CI állását a felhasználó a vizsgálat előtt megerősítette, de nincs olyan automatikus napló, amely bizonyítaná, hogy a teljes 48 órában változatlanul CI álláson működött. A korábbi 20,72 l/min összesített leolvasás nem egyidejű ezzel a méréssel, ezért ebből nem számítottunk igazolt hőteljesítményt. Az érzékelők csőre rögzítése, eltérő hőkontaktusa és késése korlátozza a ΔT értelmezését. A rövid, ismétlődő hőmérsékletváltozások okát nem tulajdonítjuk bizonyíték nélkül a szivattyúnak.
 
 További értékeléshez releváns a tényleges kazán-/szivattyúállapot vagy villamos teljesítmény, egyidejű körátfolyások és helyiségenkénti komfort. A jelenlegi elemzéshez nem kérünk újra korábban már megosztott fotókat, és nem végzünk körzárást vagy beállításpróbát. Élő rendszerbe írás, automatizmus- vagy konfigurációmódosítás nem történt. A feladat státusza nem változott.
+
+
+## PF-01.02 zárási feltételeinek pontosítása — 2026-10-30
+
+**Forrás:** a felhasználó jelen beszélgetésbeli pontosítása: bypass és külön keverőkör „nem található”; a szelep–működtető illesztést már megbeszéltük. Korábbi forrás: PF-01.02, 2026-10-28, FERRO SN-RZP adatlap és M30×1,5 termoelektromos fej csatlakoztatási lehetősége. **Rögzítés:** 2026-10-30, Europe/Budapest.
+
+- **Bypass és külön keverőkör:** a rendelkezésre álló felmérésben nem találtunk/azonosítottunk ilyen külön elemet; a bypass hiányát a felhasználó korábban is közölte. **Bizonyítottság: Részben ellenőrzött**, felhasználói közlés és hozzáférhető fotók. Ez a megfigyelés a PF-01.02 leltárának eredménye; nem keletkeztetünk új, korlátlan „teljes rendszer végleges igazolása” feltételt a felmérés lezárásához. Nem állítunk rejtett elemekre kiterjedő független vizsgálatot.
+- **Szelep–működtető csatlakozás:** a már megadott FERRO-adatlap szerinti **M30×1,5 termoelektromos fej csatlakoztatási lehetősége** rendelkezésre álló tervezési bemenet; ezt nem kérjük újra és nem tesszük ismét önálló PF-01.02-zárási feltétellé. **Bizonyítottság:** a termékcsalád adatára Ellenőrzött gyártói forrás; a beépített darabhoz rendelés a korábbi dokumentáció szerinti Részben ellenőrzött. A jelen pontosítás nem minősít minden M30×1,5 működtetőt automatikusan teljes körűen kompatibilisnek.
+- A konkrét működtető kiválasztása és adatlapjának illesztése a meglévő adatokhoz a PF-02.01 rendes tervezési feladata; ez nem az eddigi felmérés megismétlése.
+- A szivattyú CI beállításának optimalizálása és a jövőbeni zónazárások melletti minimumáramlás biztosítása a későbbi tervezés tárgya, nem a jelen komponensleltár zárási akadálya.
+
+**Zárási értékelés:** a PF-01.02 a hozzáférhető elemek leltározásának és a bizonyítottság rögzítésének szintjén lezárásra kész. A korábbi asszisztensi válaszban felsorolt bypass/keverőkör „végleges igazolását” és a már megtárgyalt csatlakozási kérdés újranyitását nem kezeljük további kötelező felmérési lépésként. Ez a bejegyzés önmagában nem változtat státuszt, és nem engedélyez élő rendszerbeavatkozást.
