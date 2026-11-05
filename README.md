@@ -121,3 +121,13 @@ A státuszok, lezárási feltételek és jóváhagyások elsődleges forrása a 
 A projekt dokumentációjában a dátumokat és időbélyegeket **Europe/Budapest** időzóna szerint kell rögzíteni. A dokumentumokban különüljön el a felmérés dátuma, a dokumentum létrehozásának vagy módosításának dátuma és az adat forrásának dátuma, ha ezek eltérnek.
 
 A műszaki döntéseket és a feladatok státuszát a Notionban kell vezetni; a GitHubon a dokumentumok verziótörténete követi a változásokat.
+
+## Kétütemű, közös szabályozási architektúra (2026-11-05)
+
+**Első ütem: [PF-02.00 – Tado Auto-Assist kiváltása](https://app.notion.com/p/40f3e49c5f5f812ab8ded61134f1bb73).** Az új jelenlét-, GPS-közeledés-, előfűtés-, ablak- és hibafelügyeleti logika már a későbbi körönkénti szabályozás közös rétegét alkotja. Az első ütemben a meglévő Tado és Bosch ON/OFF kazánkapcsolat megmarad.
+
+**Második ütem: [PF-02.02 – körönkénti HA-szabályozás](https://app.notion.com/p/4063e49c5f5f81888137e6a329ed4713).** A helyiségi célértékekből és hőigényekből körönkénti aktuátorkimenetek lesznek, a meglévő közös logika újraírása nélkül. A PF-02.01 hardver- és hidraulikai védelmi követelményei továbbra is kötelezők.
+
+**Kötelező modulhatárok:** (1) jelenlét és komfortmód, (2) helyiségi érzékelés és célérték, (3) hőigény-számítás, (4) hőtermelő-/kazánigény és Tado interfész, (5) későbbi körkimenetek, (6) kiesés-/hibafelügyelet, (7) egységes klimatizálási dashboard. Egyetlen aktív kazánvezérlési jogosultság legyen; a Tado önálló alapfűtése HA-/hálózatkieséskor nem sérülhet. A tényleges failover még **ellenőrizetlen**, ezért megvalósítási kapu.
+
+A részletes követelmények és a bizonyítékok: [PF-02.00 műszaki dokumentáció](docs/PF-02.00-tado-auto-assist-kivaltas.md). A régebbi PF-01 megfigyelések eredeti, időbélyegzett bizonyítékok maradnak, nem írjuk át őket utólag.
