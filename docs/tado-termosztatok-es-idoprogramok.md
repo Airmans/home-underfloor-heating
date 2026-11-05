@@ -215,3 +215,11 @@ A relés kapcsolási elv összhangban van a már fotózott NO–COM bekötéssel
 - Ez az útmutató az előző Wireless Receiver kézikönyvnél közvetlenebb forrás a nappali termosztát bekötési elvéhez. Nem igazolja a Hager EK960 teljes hardverazonosságát vagy a teljes Tado-zónakonfigurációt. A B5–B6 kör pontos villamos specifikációját továbbra is a megfelelő Bosch előírásból kell azonosítani.
 
 A kézikönyv konfigurációs és működési tesztlépéseit nem hajtottuk végre. Ez kizárólag dokumentációs ellenőrzés, nem beállításmódosítás vagy rendszerpróba.
+
+## PF-02.00 / PF-02.02 – azonos Tado-interfész, bővíthető helyiségi szabályozás (2026-11-05)
+
+A Tado termosztátok és a Bosch kazán jelenlegi fizikai kapcsolata **megmarad** az első ütemben. A PF-02.00-ban tervezett HA-s jelenlét, GPS-előfűtés, ablakkezelés és hőigény-kezelés a későbbi körönkénti szabályozás közös alapja. A helyiségi célértékeket, érzékelőket és hőigényeket ezért a konkrét Tado-parancsoktól elkülönítve kell modellezni; később a körszelepek kimenetei bővíthetők.
+
+**Biztonsági kapu:** HA-, LAN-, internet- vagy Tado-felhőkieséskor a Tado önálló alapfűtésének meg kell maradnia. A HA által küldött felülbírálás időtartama és a Tado saját programjára való visszatérés **még nem igazolt**. A 2026-11-05-i HA MCP olvasási lekérdezésben a két `climate` entitás `auto`, a Tado-integráció `fallback: TADO_DEFAULT` volt. Ez a tényleges kiesési működésre **nem bizonyíték**.
+
+Részletes terv és forrás: [PF-02.00](PF-02.00-tado-auto-assist-kivaltas.md). A fenti megállapítások 2026-11-05 (Europe/Budapest) időpontúak; az aktuális HA-állapot **Ellenőrzött**, a failover **Ellenőrizetlen**. A 2026-10-27-i eredeti időprogramokat és képernyőképes megállapításokat változatlanul megőrizzük.
