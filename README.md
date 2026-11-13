@@ -1,4 +1,4 @@
-> **HA dokumentációs migráció – 2026-11-13:** a HA-leltár és a HA-specifikus dokumentáció központi karbantartási helye: [Home-Assistant-Main](https://github.com/Airmans/Home-Assistant-Main/blob/main/inventories/README.md). Az alábbi korábbi HA-leltári szöveg történeti forrás, nem párhuzamosan frissítendő nyilvántartás. A projekt saját szakági dokumentációja továbbra is itt marad. [Migrációs jegyzőkönyv](https://github.com/Airmans/Home-Assistant-Main/blob/main/migration/2026-11-13/REPORT.md). Az eredeti tartalom és Git-előzmények megőrizve.
+> **HA dokumentációs migráció – 2026-11-13:** a HA-leltár és a HA-specifikus dokumentáció központi karbantartási helye: [Home-Assistant-Main](https://github.com/Airmans/Home-Assistant-Main/blob/main/inventories/README.md). A korábbi HA-leltári szakaszok történeti források, nem párhuzamosan frissítendő nyilvántartások. A projekt saját szakági dokumentációja továbbra is itt marad. [Migrációs jegyzőkönyv](https://github.com/Airmans/Home-Assistant-Main/blob/main/migration/2026-11-13/REPORT.md). [PF → HA részletes forrástérkép](https://github.com/Airmans/Home-Assistant-Main/blob/main/docs/pf-heating-source-map.md). Az eredeti tartalom és Git-előzmények megőrizve.
 
 # Padlófűtés – felmérés és körönkénti szabályozás
 
@@ -12,7 +12,7 @@ A projekt célja a meglévő otthoni padlófűtési rendszer bizonyítékokra é
 - **PF-00 – Előkészítés, meglévő bizonyítékok és hatókör jóváhagyása:** [Notion-feladat](https://app.notion.com/p/4063e49c5f5f81c1806dd9a7d9a97c53)
 - **PF-01 – Jóváhagyás után: fűtési rendszer helyszíni felmérése:** [Notion-feladat](https://app.notion.com/p/4063e49c5f5f819f8011f25cc85b3080)
 
-A Notion a projektfeladatok, döntések, státuszok és a felmérés központi nyilvántartása. Ez a GitHub-repozitórium a verziókezelt műszaki dokumentáció és a kapcsolódó fájlok helye.
+A Notion a projektfeladatok, döntések, státuszok és a felmérés központi nyilvántartása. Ez a GitHub-repozitórium a **fűtés szakági** (kazán, hidraulika, villamos, Tado hardver és eredeti bizonyítékok) műszaki dokumentációjának helye. A **Home Assistant-specifikus** dokumentumok, leltárak és a későbbi titokmentes HA-konfigurációk egyetlen szerkesztési helye a [Home-Assistant-Main](https://github.com/Airmans/Home-Assistant-Main).
 
 ## Célok
 
@@ -75,6 +75,15 @@ A dokumentumok a projekt előrehaladtával, a jóváhagyott feladatok alapján k
 A fájlnevek és a dokumentumjegyzék a PF-00 jóváhagyása után, a ténylegesen szükséges dokumentumok alapján pontosíthatók.
 
 
+## Home Assistant-központ és migrációs határ
+
+- [PF → HA részletes forrástérkép](https://github.com/Airmans/Home-Assistant-Main/blob/main/docs/pf-heating-source-map.md) — fájlonként rögzíti az elsődleges szerkesztési helyet és a történeti forrásokat.
+- [Központi HA-entitásleltár](https://github.com/Airmans/Home-Assistant-Main/blob/main/inventories/README.md) — minden HA-entitás frissítésének egyetlen helye.
+- [PF-01.05 lezárt érzékelőleltár](https://github.com/Airmans/Home-Assistant-Main/blob/main/docs/pf-01-05-erzekelo-zarojegyzek-2026-10-30.md), [MCP-ellenőrzés](https://github.com/Airmans/Home-Assistant-Main/blob/main/docs/pf-01-05-mcp-ellenorzes-2026-10-30.md) — átvett, korabeli bizonyítékok.
+- [PF-02.00 HA-követelmények](https://github.com/Airmans/Home-Assistant-Main/blob/main/docs/PF-02.00-tado-auto-assist-kivaltas.md) — innen frissítendő az új szoftveres vezérlés terve.
+
+A négy eredeti PF-beli HA-dokumentum törzsszövege 2026-11-13-án egyezett a központi példányéval; a PF-verziókat csak történeti forrásként őrizzük. A PF szakági mérési forrásait és Git-előzményeit nem helyezzük át vagy töröljük.
+
 ## Dokumentációs és forrásjegyzék
 
 ### Műszaki dokumentumok
@@ -96,10 +105,10 @@ A fájlnevek és a dokumentumjegyzék a PF-00 jóváhagyása után, a tényleges
 
 ### Home Assistant-entitásnyilvántartás
 
-- [Aktív Google Sheets – öt összevont munkalap](https://docs.google.com/spreadsheets/d/1C8MwPN9XDqlxIxq9Y7W9ttQdPe2uHFV2CqkSH99d3x0/edit)
+- [Korábbi öt összevont munkalap – megőrzött Sheets-forrás](https://docs.google.com/spreadsheets/d/1C8MwPN9XDqlxIxq9Y7W9ttQdPe2uHFV2CqkSH99d3x0/edit)
 - [Teljes archív Google Sheets – 43 munkalap](https://docs.google.com/spreadsheets/d/1bVRrP_qyaME_BwdqW0-GveBN2Kbxl0v_vSNa11RjfAo/edit)
 
-A 38 eredeti munkalap 3407 forrássorából 3401 egyedi entitás került az aktív leltárba. A forrásegyezőség, a hat többforrású entitás és a fennmaradó kérdések a [jegyzőkönyvben](https://github.com/Airmans/Home-Assistant-Main/blob/main/docs/home-assistant-entitasleltar-2026-10-30.md) találhatók. A fűtési szempontból releváns HA-érzékelők célzott felmérése még nyitott.
+A 38 eredeti munkalap 3407 forrássorából 3401 egyedi entitás került a [központi HA-leltárba](https://github.com/Airmans/Home-Assistant-Main/blob/main/inventories/entities.csv). Az öt lapos Google Sheets a migráció óta történeti forrás, nem párhuzamosan frissített nyilvántartás. A forrásegyezőség, a hat többforrású entitás és a fennmaradó kérdések a [jegyzőkönyvben](https://github.com/Airmans/Home-Assistant-Main/blob/main/docs/home-assistant-entitasleltar-2026-10-30.md) találhatók. A PF-01.05 célzott, történeti HA-érzékelő-leltáregyeztetés elkészült; az azonosított fizikai és entitáseltérések külön nyitott ellenőrzési pontok.
 
 
 ## Notion részfeladatok
