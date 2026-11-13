@@ -1,3 +1,5 @@
+> **HA dokumentációs migráció – 2026-11-13:** a HA-leltár és a HA-specifikus dokumentáció központi karbantartási helye: [Home-Assistant-Main](https://github.com/Airmans/Home-Assistant-Main/blob/main/docs/home-assistant-entitasleltar-2026-10-30.md). Az alábbi korábbi HA-leltári szöveg történeti forrás, nem párhuzamosan frissítendő nyilvántartás. A projekt saját szakági dokumentációja továbbra is itt marad. [Migrációs jegyzőkönyv](https://github.com/Airmans/Home-Assistant-Main/blob/main/migration/2026-11-13/REPORT.md). Az eredeti tartalom és Git-előzmények megőrizve.
+
 # Home Assistant entitásleltár – összevonás és ellenőrzés
 
 **Ellenőrzés dátuma:** 2026-10-30 (Europe/Budapest)  

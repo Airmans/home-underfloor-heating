@@ -1,3 +1,5 @@
+> **HA dokumentációs migráció – 2026-11-13:** a HA-leltár és a HA-specifikus dokumentáció központi karbantartási helye: [Home-Assistant-Main](https://github.com/Airmans/Home-Assistant-Main/blob/main/inventories/README.md). Az alábbi korábbi HA-leltári szöveg történeti forrás, nem párhuzamosan frissítendő nyilvántartás. A projekt saját szakági dokumentációja továbbra is itt marad. [Migrációs jegyzőkönyv](https://github.com/Airmans/Home-Assistant-Main/blob/main/migration/2026-11-13/REPORT.md). Az eredeti tartalom és Git-előzmények megőrizve.
+
 # Padlófűtés – felmérés és körönkénti szabályozás
 
 A projekt célja a meglévő otthoni padlófűtési rendszer bizonyítékokra épülő felmérése, a körönkénti szabályozás megtervezése, valamint a biztonságos megvalósításhoz szükséges műszaki és dokumentációs terv elkészítése.
@@ -82,7 +84,7 @@ A fájlnevek és a dokumentumjegyzék a PF-00 jóváhagyása után, a tényleges
 - [Padlófűtési körök és beszabályozás](docs/padlofutesi-korok-es-beszabalyozas.md)
 - [Tado-termosztátok és időprogramok](docs/tado-termosztatok-es-idoprogramok.md)
 - [Villamos elosztó](docs/villamos-eloszto.md)
-- [Home Assistant-entitásleltár – ellenőrzési jegyzőkönyv](docs/home-assistant-entitasleltar-2026-10-30.md)
+- [Home Assistant-entitásleltár – ellenőrzési jegyzőkönyv](https://github.com/Airmans/Home-Assistant-Main/blob/main/docs/home-assistant-entitasleltar-2026-10-30.md)
 
 ### Alaprajzok és eredeti bizonyítékok
 
@@ -97,7 +99,7 @@ A fájlnevek és a dokumentumjegyzék a PF-00 jóváhagyása után, a tényleges
 - [Aktív Google Sheets – öt összevont munkalap](https://docs.google.com/spreadsheets/d/1C8MwPN9XDqlxIxq9Y7W9ttQdPe2uHFV2CqkSH99d3x0/edit)
 - [Teljes archív Google Sheets – 43 munkalap](https://docs.google.com/spreadsheets/d/1bVRrP_qyaME_BwdqW0-GveBN2Kbxl0v_vSNa11RjfAo/edit)
 
-A 38 eredeti munkalap 3407 forrássorából 3401 egyedi entitás került az aktív leltárba. A forrásegyezőség, a hat többforrású entitás és a fennmaradó kérdések a [jegyzőkönyvben](docs/home-assistant-entitasleltar-2026-10-30.md) találhatók. A fűtési szempontból releváns HA-érzékelők célzott felmérése még nyitott.
+A 38 eredeti munkalap 3407 forrássorából 3401 egyedi entitás került az aktív leltárba. A forrásegyezőség, a hat többforrású entitás és a fennmaradó kérdések a [jegyzőkönyvben](https://github.com/Airmans/Home-Assistant-Main/blob/main/docs/home-assistant-entitasleltar-2026-10-30.md) találhatók. A fűtési szempontból releváns HA-érzékelők célzott felmérése még nyitott.
 
 
 ## Notion részfeladatok
@@ -130,4 +132,4 @@ A műszaki döntéseket és a feladatok státuszát a Notionban kell vezetni; a 
 
 **Kötelező modulhatárok:** (1) jelenlét és komfortmód, (2) helyiségi érzékelés és célérték, (3) hőigény-számítás, (4) hőtermelő-/kazánigény és Tado interfész, (5) későbbi körkimenetek, (6) kiesés-/hibafelügyelet, (7) egységes klimatizálási dashboard. Egyetlen aktív kazánvezérlési jogosultság legyen; a Tado önálló alapfűtése HA-/hálózatkieséskor nem sérülhet. A tényleges failover még **ellenőrizetlen**, ezért megvalósítási kapu.
 
-A részletes követelmények és a bizonyítékok: [PF-02.00 műszaki dokumentáció](docs/PF-02.00-tado-auto-assist-kivaltas.md). A régebbi PF-01 megfigyelések eredeti, időbélyegzett bizonyítékok maradnak, nem írjuk át őket utólag.
+A részletes követelmények és a bizonyítékok: [PF-02.00 műszaki dokumentáció](https://github.com/Airmans/Home-Assistant-Main/blob/main/docs/PF-02.00-tado-auto-assist-kivaltas.md). A régebbi PF-01 megfigyelések eredeti, időbélyegzett bizonyítékok maradnak, nem írjuk át őket utólag.

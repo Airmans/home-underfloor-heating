@@ -1,3 +1,5 @@
+> **HA dokumentációs migráció – 2026-11-13:** a HA-leltár és a HA-specifikus dokumentáció központi karbantartási helye: [Home-Assistant-Main](https://github.com/Airmans/Home-Assistant-Main/blob/main/docs/pf-01-05-erzekelo-zarojegyzek-2026-10-30.md). Az alábbi korábbi HA-leltári szöveg történeti forrás, nem párhuzamosan frissítendő nyilvántartás. A projekt saját szakági dokumentációja továbbra is itt marad. [Migrációs jegyzőkönyv](https://github.com/Airmans/Home-Assistant-Main/blob/main/migration/2026-11-13/REPORT.md). Az eredeti tartalom és Git-előzmények megőrizve.
+
 # PF-01.05 – érzékelő-egyeztetés zárójegyzék
 
 Ellenőrzés: 2026-10-30, Europe/Budapest. Forrás: Home Assistant MCP, ha_search és ha_get_entity, kizárólag olvasási lekérdezés; korábbi PF-01.05 Notion-adatok. Bizonyítottság: Ellenőrzött a HA-regiszterben való jelenlét; a fizikai felszereltség csak korábbi felhasználói közlés.

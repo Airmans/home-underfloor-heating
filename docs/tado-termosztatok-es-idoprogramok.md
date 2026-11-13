@@ -222,4 +222,4 @@ A Tado termosztátok és a Bosch kazán jelenlegi fizikai kapcsolata **megmarad*
 
 **Biztonsági kapu:** HA-, LAN-, internet- vagy Tado-felhőkieséskor a Tado önálló alapfűtésének meg kell maradnia. A HA által küldött felülbírálás időtartama és a Tado saját programjára való visszatérés **még nem igazolt**. A 2026-11-05-i HA MCP olvasási lekérdezésben a két `climate` entitás `auto`, a Tado-integráció `fallback: TADO_DEFAULT` volt. Ez a tényleges kiesési működésre **nem bizonyíték**.
 
-Részletes terv és forrás: [PF-02.00](PF-02.00-tado-auto-assist-kivaltas.md). A fenti megállapítások 2026-11-05 (Europe/Budapest) időpontúak; az aktuális HA-állapot **Ellenőrzött**, a failover **Ellenőrizetlen**. A 2026-10-27-i eredeti időprogramokat és képernyőképes megállapításokat változatlanul megőrizzük.
+Részletes terv és forrás: [PF-02.00](https://github.com/Airmans/Home-Assistant-Main/blob/main/docs/PF-02.00-tado-auto-assist-kivaltas.md). A fenti megállapítások 2026-11-05 (Europe/Budapest) időpontúak; az aktuális HA-állapot **Ellenőrzött**, a failover **Ellenőrizetlen**. A 2026-10-27-i eredeti időprogramokat és képernyőképes megállapításokat változatlanul megőrizzük.
